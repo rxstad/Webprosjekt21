@@ -7,10 +7,14 @@ html, body {
 	font-family: helvetica;
 	width: 100%;
 }
+#header {
+	height: 400px;
+}
 #wrapper {
-	
+	position: relative;
 }
 #main {
+
 }
 
 /* Titles */
