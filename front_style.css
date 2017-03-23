@@ -1,5 +1,15 @@
 #header {
+	background: #000 url('img/fjerdingen.jpg') no-repeat;
 	height: 400px;
+	width: 100%;
+
+	background-position: center;
+	overflow: hidden;
+	background-position: bottom center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 #wrapper {
 	position: relative;
