@@ -15,8 +15,9 @@ http://shouldiprefix.com/#gradients
 	background: -ms-linear-gradient(top, #f5756c 0%, #fd5481 100%); /* Internet Explorer 10-11 */
 	background: linear-gradient(to bottom, #f5756c 0%, #fd5481 100%)
 	width: 100%;
-	height: 400px;
+	height: 100vh;
 	position: relative;
+	overflow: hidden;
 }
 #header_search_outer {
 	width: 100%;
@@ -24,19 +25,21 @@ http://shouldiprefix.com/#gradients
 	font-family: 'Montserrat', sans-serif;
 	position: absolute;
 	z-index: 3;
+	
 }
 .header_search_inner {
 	width: 400px;
-	height: 200px;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 20vh;
 	position: relative;
 	z-index: 4;
 	padding: 10px;
 	text-align: center;
 	color: #fff;
 	font-size: 2.5em;
+	overflow: hidden;
 }
 .header_img {
 	background: url('img/vulkan.jpg') center center;
@@ -45,18 +48,18 @@ http://shouldiprefix.com/#gradients
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	width: 100%;
-	height: 400px;
+	height: 100vh;
 	opacity: 0.3;
 	-webkit-filter: blur(5px);
-	moz-filter: blur(5px);
+	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
 	-ms-filter: blur(5px);
 	filter: blur(5px);
 	z-index: 2;
 }
-input[type=search] {
-	/* Styling funker ikke i safari */
+input[type=text] {
     width: 190px;
     -webkit-transition: width 0.4s ease-in-out;
     color: #000;
@@ -69,11 +72,11 @@ input[type=search] {
 	border-top: 0; border-right: 0;border-left: 0;
 	padding-bottom: 5px;
 }
-input[type=search]:focus {
+input[type=text]:focus {
     width: 305px;
     outline: 0;
 }
-input[type=search]::-webkit-slider-thumb {
+input[type=text]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -115,11 +118,10 @@ a.button {
 }
 #main {
 	background: #fff;
-	max-width: 800px;
+	max-width: 780px;
 	min-width: 400px;
 	min-height: 200px;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
-	padding: 10px;
+	padding: 20px;
 }
