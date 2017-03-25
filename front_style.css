@@ -32,17 +32,17 @@ http://shouldiprefix.com/#gradients
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20vh;
+	margin-top: 22vh;
 	position: relative;
 	z-index: 4;
 	padding: 10px;
 	text-align: center;
 	color: #fff;
-	font-size: 2.5em;
+	font-size: calc(12px + 2vw); /* Juster størrelsen responsive*/
 	overflow: hidden;
 }
 .header_img {
-	background: url('img/vulkan.jpg') center center;
+	background: url('img/vulkan_bw.jpg') center center;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -51,7 +51,7 @@ http://shouldiprefix.com/#gradients
 	background-attachment: fixed;
 	width: 100%;
 	height: 100vh;
-	opacity: 0.3;
+	opacity: 0.2;
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
 	-o-filter: blur(5px);
@@ -65,7 +65,8 @@ input[type=text] {
     color: #000;
     font-size: 17pt;
     font-weight: 300;
-    transition: width 0.4s ease-in-out;
+    text-align: center;
+    transition: width 0.5s ease-in-out;
 	font-family: 'Roboto', sans-serif;
 	background: transparent;
 	border-bottom: 2px solid #fff;
@@ -95,24 +96,30 @@ input[type=text]::-webkit-slider-thumb {
 }
 /* Midlertidig knapp*/
 a.button {
+	background: transparent;
 	color: #fff;
     text-decoration: none;
     color: initial;
-    font-size: 12px;
+    font-size: 8px;
     padding: 5px;
-    background: transparent;
-    border: 2px solid #fff;
-    opacity: 0.1;
-    transition: 0.5s;
+    border: 0px solid #fff;
+    opacity: 0.3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: letter-spacing 0.5s linear, opacity 0.5s;
  }
  a.button:hover {
- 	opacity: 0.5;
+ 	opacity: 1;
+ 	letter-spacing: 1px;
+ 	cursor: pointer;
  }
 
  /* === UNDER HEADER === */
 
 #wrapper {
-	background: #000;
+	background: url('img/ep_naturalwhite.png'); /* random bilde */
 	position: relative;
 	width: 100%;
 }
@@ -120,8 +127,14 @@ a.button {
 	background: #fff;
 	max-width: 780px;
 	min-width: 400px;
-	min-height: 200px;
+	min-height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+}
+#footer {
+	background: #000;
+	width: 100%;
+	height: 200px;
+
 }

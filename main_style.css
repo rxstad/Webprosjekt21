@@ -9,6 +9,10 @@ html, body {
 }
 
 /* Titles */
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
