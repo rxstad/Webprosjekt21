@@ -25,7 +25,6 @@ http://shouldiprefix.com/#gradients
 	font-family: 'Montserrat', sans-serif;
 	position: absolute;
 	z-index: 3;
-	
 }
 .header_search_logo {
 	position: relative;
@@ -35,6 +34,12 @@ http://shouldiprefix.com/#gradients
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
 	/* background: #000;*/
 }
 .header_search_inner {
@@ -42,7 +47,7 @@ http://shouldiprefix.com/#gradients
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15vh;
+	margin-top: 12vh;
 	position: relative;
 	z-index: 4;
 	padding: 10px;
@@ -127,10 +132,48 @@ a.button {
  	cursor: pointer;
  }
 
+#top_menu_fadein {
+	display: none; /* blir fjernet av .fadein i JS */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    z-index: 6;
+    margin: 0;
+    -webkit-box-shadow: 0px 0px 58px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 58px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 58px 0px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.top_menu {
+	font-family: 'Montserrat', sans-serif;  
+	font-size: 0.7em;        
+	text-align: center;
+	width: 100%;    
+	padding: 5px 0px 5px 0px;   
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 17px;
+}
+.top_menu a {  
+	color: #000;     
+	width: 200px;
+	margin: 0px 110px 0px 0px;  
+	transition: 0.5s;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.top_menu a:hover {
+	color: #fd5481;
+	letter-spacing: 1px;
+}
  /* === UNDER HEADER === */
 
 #wrapper {
-	background: url('img/ep_naturalwhite.png'); /* random bilde */
+	background: #efefef;
 	position: relative;
 	width: 100%;
 }

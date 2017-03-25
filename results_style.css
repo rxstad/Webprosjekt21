@@ -54,7 +54,7 @@
 /* === UNDER HEADER === */
 
 #wrapper {
-	background: url('img/ep_naturalwhite.png'); /* random bilde */
+	background: #efefef;
 	position: relative;
 	width: 100%;
 }
