@@ -6,6 +6,7 @@ http://caniuse.com/#home
 http://shouldiprefix.com/#gradients
  */
 
+/* === Header === */
 #header {
 	background: -moz-linear-gradient(top, #f5756c 0%, #fd5481 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, #f5756c), color-stop(100%, #fd5481)); /* WebKit, Blink, Edge */
@@ -55,9 +56,10 @@ http://shouldiprefix.com/#gradients
 	z-index: 2;
 }
 input[type=search] {
+	/* Styling funker ikke i safari */
     width: 190px;
     -webkit-transition: width 0.4s ease-in-out;
-    color: #fff;
+    color: #000;
     font-size: 17pt;
     font-weight: 300;
     transition: width 0.4s ease-in-out;
@@ -70,6 +72,9 @@ input[type=search] {
 input[type=search]:focus {
     width: 305px;
     outline: 0;
+}
+input[type=search]::-webkit-slider-thumb {
+  -webkit-appearance: none;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #444;
@@ -85,6 +90,24 @@ input[type=search]:focus {
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #444;
 }
+/* Midlertidig knapp*/
+a.button {
+	color: #fff;
+    text-decoration: none;
+    color: initial;
+    font-size: 12px;
+    padding: 5px;
+    background: transparent;
+    border: 2px solid #fff;
+    opacity: 0.1;
+    transition: 0.5s;
+ }
+ a.button:hover {
+ 	opacity: 0.5;
+ }
+
+ /* === UNDER HEADER === */
+
 #wrapper {
 	background: #000;
 	position: relative;
@@ -94,6 +117,7 @@ input[type=search]:focus {
 	background: #fff;
 	max-width: 800px;
 	min-width: 400px;
+	min-height: 200px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
