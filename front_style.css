@@ -125,7 +125,7 @@ a.button {
 }
 #main {
 	background: #fff;
-	max-width: 780px;
+	max-width: 760px;
 	min-width: 400px;
 	min-height: 600px;
 	margin-left: auto;
@@ -135,6 +135,16 @@ a.button {
 #footer {
 	background: #000;
 	width: 100%;
+	height: auto;
+}
+.inner_footer {
+	background: #efefef;
+	max-width: 760px;
 	height: 200px;
-
+	z-index: 999;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
