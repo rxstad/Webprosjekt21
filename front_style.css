@@ -39,7 +39,6 @@ http://shouldiprefix.com/#gradients
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-	/* background: #000;*/
 }
 .header_search_inner {
 	width: 400px;
@@ -54,7 +53,6 @@ http://shouldiprefix.com/#gradients
 	color: #fff;
 	font-size: calc(12px + 2vw); /* Juster tekst størrelsen responsive */
 	overflow: hidden;
-	/* background: #000;*/
 }
 .header_img {
 	background: url('img/vulkan_bw.jpg') center center;
@@ -155,11 +153,16 @@ a.button {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 17px;
+	display: flex;
+  	flex-flow: row wrap;
+  	/* This aligns items to the end line on main-axis */
+  	justify-content: space-around;
 }
+
 .top_menu a {  
 	color: #000;     
 	width: 200px;
-	margin: 0px 110px 0px 0px;  
+	margin: 0px 0px 0px 0px;  
 	transition: 0.5s;
 	text-align: center;
 	text-decoration: none;
@@ -174,7 +177,7 @@ a.button {
  /* =============== UNDER HEADER =============== */
 
 #wrapper {
-	background: #efefef;
+	background: transparent;
 	position: relative;
 	width: 100%;
 }
@@ -187,13 +190,29 @@ a.button {
 	margin-right: auto;
 	padding: 20px;
 }
+#mainflex {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	display: -webkit-box;
+ 	display: -moz-box;
+ 	display: -ms-flexbox;
+	display: -webkit-flex;
+ 	display: flex;
+ 	height: auto;
+}
+.mainflex_item {
+	flex-grow: 1;
+	flex-shrink: 1;
+	height: 300px;
+}
 /* =============== FOOTER =============== */
 
 #footer {
 	background: #1b1b1b;
 	width: 100%;
 	height: auto;
-	color: #fff;
+	color: #efefef;
 	font-size: 8pt;
 }
 .inner_footer {
