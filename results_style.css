@@ -53,13 +53,13 @@
 /* === UNDER HEADER === */
 
 #wrapper {
-	background: #efefef;
+	background: transparent;
 	position: relative;
 	width: 100%;
 }
 #main {
 	background: #fff;
-	max-width: 760px;
+	max-width: 1100px;
 	min-width: 400px;
 	min-height: 600px;
 	margin-left: auto;
@@ -81,7 +81,7 @@
 .resultsflex_item {
 	flex-grow: 1;
 	flex-shrink: 1;
-	height: 200px;
+	height: 250px;
 	width: 200px;
 	background: #000;
 	padding: 5px;

@@ -191,6 +191,7 @@ a.button {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
+	padding-bottom: 30px;
 }
 #mainflex {
 	width: 100%;
@@ -218,7 +219,7 @@ a.button {
 	margin-top: -60px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 26pt;
+	font-size: 25pt;
 	color: #fff;
 	text-shadow: 2px 1px 8px #444;
 	margin-left: 15px;
