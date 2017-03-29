@@ -74,3 +74,34 @@ h3 {
 	color: #fd5481;
 	letter-spacing: 1px;
 }
+/* =============== FOOTER =============== */
+
+#footer {
+	background: #1b1b1b;
+	width: 100%;
+	height: auto;
+	color: #efefef;
+	font-size: 8pt;
+}
+.inner_footer {
+	max-width: 800px;
+	height: 150px;
+	z-index: 999;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.footer_social_img {
+	filter: grayscale(1);
+	transition: 0.5s;
+}
+.footer_social_img:hover {
+	filter: grayscale(0);
+}
+.footer_copyright {
+	color: #555;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 9px;
+}
