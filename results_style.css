@@ -40,7 +40,6 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-attachment: fixed;
 	width: 100%;
 	height: 100vh;
 	opacity: 0.2;
@@ -67,19 +66,34 @@
 	margin-right: auto;
 	padding: 20px;
 }
+/* =============== FOOTER =============== */
+
 #footer {
-	background: #000;
+	background: #1b1b1b;
 	width: 100%;
 	height: auto;
+	color: #efefef;
+	font-size: 8pt;
 }
 .inner_footer {
-	background: #efefef;
-	max-width: 760px;
-	height: 200px;
+	max-width: 800px;
+	height: 150px;
 	z-index: 999;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+.footer_social_img {
+	filter: grayscale(1);
+	transition: 0.5s;
+}
+.footer_social_img:hover {
+	filter: grayscale(0);
+}
+.footer_copyright {
+	color: #555;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 9px;
 }

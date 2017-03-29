@@ -12,7 +12,7 @@ http://shouldiprefix.com/#gradients
 	background: -webkit-linear-gradient(top, #f5756c 0%, #fd5481 100%); /* WebKit, Blink, Edge */
 	background: -o-linear-gradient(top, #f5756c 0%, #fd5481 100%);
 	background: -ms-linear-gradient(top, #f5756c 0%, #fd5481 100%); /* Internet Explorer 10-11 */
-	background: linear-gradient(to bottom, #f5756c 0%, #fd5481 100%)
+	background: linear-gradient(to bottom, #f5756c 0%, #fd5481 100%);
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -185,7 +185,7 @@ a.button {
 	background: #fff;
 	max-width: 760px;
 	min-width: 400px;
-	min-height: 600px;
+	min-height: 500px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 20px;
@@ -204,12 +204,27 @@ a.button {
 .mainflex_item {
 	flex-grow: 1;
 	flex-shrink: 1;
-	height: 300px;
+	height: auto;
+	width: 200px;
+	padding: 5px;
+}
+.imgitem_main {
+
+}
+.imgdesc_main {
+	position: absolute;
+	margin-top: -50px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 22pt;
+	color: #fff;
+	text-shadow: 2px 1px 8px #444;
+	margin-left: 15px;
 }
 /* =============== FOOTER =============== */
 
 #footer {
-	background: #1b1b1b;
+	background: #2b2b2b;
 	width: 100%;
 	height: auto;
 	color: #efefef;
@@ -233,7 +248,7 @@ a.button {
 	filter: grayscale(0);
 }
 .footer_copyright {
-	color: #555;
+	color: #777;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 9px;
 }
