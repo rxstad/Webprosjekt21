@@ -185,7 +185,7 @@ a.button {
 }
 #main {
 	background: #fff;
-	max-width: 840px;
+	max-width: 900px;
 	min-width: 400px;
 	min-height: 500px;
 	margin-left: auto;
@@ -207,7 +207,7 @@ a.button {
 	flex-grow: 1;
 	flex-shrink: 10;
 	height: auto;
-	width: 200px;
+	width: 300px;
 	padding: 5px;
 }
 .imgitem_main {
@@ -215,10 +215,10 @@ a.button {
 }
 .imgdesc_main {
 	position: absolute;
-	margin-top: -50px;
+	margin-top: -60px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 22pt;
+	font-size: 26pt;
 	color: #fff;
 	text-shadow: 2px 1px 8px #444;
 	margin-left: 15px;
