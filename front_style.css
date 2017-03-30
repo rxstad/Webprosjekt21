@@ -4,15 +4,17 @@ background: #f5756c, #fd5481;
 display:flex; display: inline-flex, align-content, align-items, align-self, justify-content and order.
 http://caniuse.com/#home
 http://shouldiprefix.com/#gradients
+
+#6DAFC7 a4cddc
  */
 
 /* =============== Header =============== */
 #header {
-	background: -moz-linear-gradient(top, #f5756c 0%, #fd5481 100%);
-	background: -webkit-linear-gradient(top, #f5756c 0%, #fd5481 100%); /* WebKit, Blink, Edge */
-	background: -o-linear-gradient(top, #f5756c 0%, #fd5481 100%);
-	background: -ms-linear-gradient(top, #f5756c 0%, #fd5481 100%); /* Internet Explorer 10-11 */
-	background: linear-gradient(to bottom, #f5756c 0%, #fd5481 100%);
+	background: -moz-linear-gradient(top, #6DAFC7 0%, #a4cddc 100%);
+	background: -webkit-linear-gradient(top, #6DAFC7 0%, #a4cddc 100%); /* WebKit, Blink, Edge */
+	background: -o-linear-gradient(top, #6DAFC7 0%, #a4cddc 100%);
+	background: -ms-linear-gradient(top, #6DAFC7 0%, #a4cddc 100%); /* Internet Explorer 10-11 */
+	background: linear-gradient(to bottom, #6DAFC7 0%, #a4cddc 100%);
 	width: 100%;
 	height: 100vh;
 	position: relative;
