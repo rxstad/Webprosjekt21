@@ -155,10 +155,11 @@ a.button {
 	display: -webkit-flex;
  	display: flex;
  	height: auto;
+ 	align-content: stretch;
 }
 .mainflex_item {
-	flex-grow: 10;
-	flex-shrink: 1;
+	flex-grow: 1;
+	flex-shrink: 0;
 	height: auto;
 	width: 220px;
 	padding: 5px;
