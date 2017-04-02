@@ -1,6 +1,13 @@
 <?php
-$statement = $connection->prepare("SELECT * from places");
+
+require("search.php");
+//$statement = $connection->prepare("SELECT * from places");
+if ($sql !="") {
+    $statement = $connection->prepare($sql);
+}
+
 $statement->execute();
+
 
 
 $events =[];

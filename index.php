@@ -24,7 +24,7 @@ require("header.php");
 			<h2>Jeg vil</h2>
 
 
-            <form method="post" action="search.php?go" id="searchform">
+            <form method="post" action="results.php?go" id="searchform">
 			<input type="text" name="search" placeholder="Søk ..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Søk ...'"><br><br>
                 <input  type="submit" name="submit" value="Search">
             </form>
