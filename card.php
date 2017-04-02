@@ -1,20 +1,5 @@
 <?php
-
 require("search.php");
-//$statement = $connection->prepare("SELECT * from places");
-if ($sql !="") {
-    $statement = $connection->prepare($sql);
-}
-
-$statement->execute();
-
-
-
-$events =[];
-
-while($row = $statement->fetch(PDO::FETCH_ASSOC)){
-$events[] = $row;
-}
 ?>
 
     <?php foreach ($events as $event) { ?>
@@ -33,13 +18,6 @@ $events[] = $row;
 
     <div class="mdl-card__supporting-text"> <a href="<?= $event['http'] ?>">url</a> </div>
     <div class="mdl-card__supporting-text"> <a href="<?= $event['facebook'] ?>">Facebook</a> </div>
-
-
-    <!-- <?php if ($event['is_free']) { ?>
-
-                        <div class="mdl-card__supporting-text">(Gratis)</div>
-
-                    <?php } ?>-->
 
     </div>
     <!-- End Event Card -->
