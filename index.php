@@ -1,5 +1,6 @@
 <?php
 require("header.php");
+
 ?>
 <link rel="stylesheet" type="text/css" href="front_style.css">
 
@@ -21,7 +22,15 @@ require("header.php");
 		</div>
 		<div class="header_search_inner">
 			<h2>Jeg vil</h2>
+
+
+            <form method="post" action="search.php?go" id="searchform">
 			<input type="text" name="search" placeholder="Søk ..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Søk ...'"><br><br>
+                <input  type="submit" name="submit" value="Search">
+            </form>
+
+
+
 			<a href="results.html" class="button">Midlertidig resultatlink</a>
 		</div>
 	</div>
