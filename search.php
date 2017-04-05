@@ -5,10 +5,10 @@ if(isset($_POST['submit'])){
     if(isset($_GET['go'])){
         $search = htmlentities($_POST['search'], ENT_QUOTES, 'UTF-8');
 
-        $sql=("SELECT * FROM places where type LIKE '%$search%' 
-        OR  navn LIKE '%$search%'  
-        OR products LIKE '%$search%' 
-        OR adress LIKE '%$search%'")
+        $sql=("SELECT * FROM places where UPPER (type) LIKE upper ('%$search%') 
+        OR UPPER (navn) LIKE upper ('%$search%')  
+        OR upper (products) LIKE upper ('%$search%') 
+        OR upper (adress) LIKE upper ('%$search%')")
         or die("could not search");
 
            $res = $connection->query($sql);
