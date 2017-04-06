@@ -13,14 +13,17 @@ if(isset($_POST['submit'])){
 
            $res = $connection->query($sql);
            $num_rows = $res->fetchColumn();
+           $result;
             if($num_rows == 0){
-                print_r( 'there was no search results for ' . $search);
+                $result = 'there was no search results for "' . $search .'"';
             }else {
+                $result = 'Resultater for "' . $search.'"';
                 $statement = $connection->prepare($sql);
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                     $events[] = $row;
                 }
+
             }
     }
 }

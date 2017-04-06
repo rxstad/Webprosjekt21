@@ -1,6 +1,7 @@
 <?php
 require("config.php");
 require ("header.php");
+require ("search.php")
 ?>
 	<link rel="stylesheet" type="text/css" href="results_style.css">
 
@@ -18,7 +19,7 @@ require ("header.php");
 	</div>
 	<div id="header_search_outer">
 		<div class="header_search_inner">
-		<h2>Resultater for "navn"</h2>
+		<h2><?print_r($result);?></h2>
 		</div>
 	</div>
 	<div class="header_img"></div>
