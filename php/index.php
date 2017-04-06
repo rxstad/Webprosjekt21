@@ -2,7 +2,7 @@
 require("header.php");
 
 ?>
-<link rel="stylesheet" type="text/css" href="front_style.css">
+<link rel="stylesheet" type="text/css" href="css/main_style.css">
 
 <body>
 <div id="header">
@@ -18,7 +18,7 @@ require("header.php");
 	</div>
 	<div id="header_search_outer">
 		<div class="header_search_logo">
-			<a href="index.html"><img src="img/logo.png" width="95px"></a>
+			<a href="index.php"><img src="img/logo.png" width="95px"></a>
 		</div>
 		<div class="header_search_inner">
 			<h2>Jeg vil</h2>
@@ -31,7 +31,7 @@ require("header.php");
 
 
 
-			<a href="results.html" class="button">Midlertidig resultatlink</a>
+			<a href="results.php" class="button">Midlertidig resultatlink</a>
 		</div>
 	</div>
 	<div class="header_img"></div>
