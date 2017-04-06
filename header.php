@@ -11,7 +11,6 @@
 	<title>Front</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="main_style.css">
-	<link rel="stylesheet" type="text/css" href="results_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=0"/>
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
 	 	 <script type="text/javascript" src="js/top_menu_fadein.js"></script>

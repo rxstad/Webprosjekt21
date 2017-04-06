@@ -2,6 +2,8 @@
 require("config.php");
 require ("header.php");
 ?>
+	<link rel="stylesheet" type="text/css" href="results_style.css">
+
 <body>
 <div id="header">
 <div id="top_menu_fadein">
