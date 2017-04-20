@@ -41,12 +41,12 @@ function addtime(type) {
     var input = document.createElement("input");
     var input2 = document.createElement("input");
     input.type ="date";
-    input.id="tid";
+    input.id="dato";
     input.name="dato";
     input.required="true";
     input.min= dateNow;
     input.max= dateMax;
-    input2.id="dato";
+    input2.id="tid";
     input2.type="time";
 
 
@@ -65,7 +65,7 @@ function addtime(type) {
         tilDiv.removeChild(tilDiv.childNodes[tilDiv.childNodes.length-1]);
     }
 }
-
+//ikke i bruk
 function checkForEvent(type) {
     //var type = document.getElementById("type").value;
     var t = document.getElementById('tidDiv')
