@@ -1,27 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: slafa
- * Date: 26.04.2017
- * Time: 13.30
- */
+?>
 
-<style>
-    #map {
-        height: 500px;
-        width: 500px;
-       }
-    </style>
 
-    <form>
+    <!--<form>
       <input type="text" id="search" class="controls" placeholder="Search Box"/>
       <input type="submit" value="Submit">
-    </form>
+    </form>-->
     <div id="map"></div>
     <script>
       function initMap() {
           var fjerdingen = {lat: 59.9160539, lng: 10.7599923};
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('header'), {
           zoom: 15,
           center: fjerdingen
         });
@@ -35,6 +24,9 @@
           map: map,
           icon: fjerdingenImg
         });
+
+          
+
         var input = document.getElementById('search');
         var searchBox = new google.maps.places.SearchBox(input);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
