@@ -25,7 +25,10 @@ require("header.php");
 		</div>
 		<div id="sidebar">
 			<div class="side_thumbnail"><img src="img/shops/info_sample.jpg" width="240px" height="240px"></div>
-			Tlfnr
+
+			<img src="img/icons/Phone.png" width="20px"> 986 54 765
+			<hr >
+			Adresse 
 			<hr >
 			<h4>Åpningstider</h4>
 			M 07-23<br>
@@ -36,7 +39,9 @@ require("header.php");
 			L 07-23<br>
 			S 07-23
 			<hr >
-			social-links
+			<div class="side_social">
+			<center><img src="img/icons/Facebook.png" width="35px"><img src="img/icons/Twitter.png" width="35px"><img src="img/icons/Google Plus.png" width="35px"></center>
+			</div>
 		</div>
 	</div>
 	
