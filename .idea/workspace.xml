@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c7ce470-73bc-4924-a81d-0273b3686da2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons/Facebook.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons/Google Plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons/Phone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/icons/Twitter.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.php" afterPath="$PROJECT_DIR$/info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info_style.css" afterPath="$PROJECT_DIR$/info_style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,8 +42,8 @@
       <file leaf-file-name="info.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="150">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -398,12 +392,12 @@
       <workItem from="1491559584762" duration="1907000" />
       <workItem from="1492677368105" duration="8499000" />
       <workItem from="1493050522440" duration="19231000" />
-      <workItem from="1493206778060" duration="693000" />
+      <workItem from="1493206778060" duration="1247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106984000" />
+    <option name="totallyTimeSpent" value="107538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -767,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="43" column="23" lean-forward="true" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+        <state relative-caret-position="150">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
