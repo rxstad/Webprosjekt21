@@ -8,24 +8,21 @@ $lng = explode('lng: ', $coords)[1];
 
 ?>
 
-
-    <!--<form>
-      <input type="text" id="search" class="controls" placeholder="Search Box"/>
-      <input type="submit" value="Submit">
-    </form>-->
     <div id="map" style="z-index: 10"></div>
     <script>
-      function initMap() {
-
+        function initMap() {
 
           var sted = {<?php echo $coords ?>};
           var fjerdingen = {lat: 59.9160539, lng: 10.7599923};
           var vulkan = {lat: 59.9197317, lng: 10.7473439};
-          var center = {lat: 59.9195837, lng: 10.750899};
-        var map = new google.maps.Map(document.getElementById('header'), {
+          var map = new google.maps.Map(document.getElementById('header'), {
           zoom: 14,
-          center: center,
-           styles: [
+          center: sted,
+            mapTypeControl: false,
+            streetViewControl: false,
+            rotateControl: false,
+            scaleControl: false,
+            styles: [
     {
         "featureType": "administrative",
         "elementType": "all",

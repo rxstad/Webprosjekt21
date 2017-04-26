@@ -46,7 +46,21 @@ require ("inforesults.php");
 			S 07-23
 			<hr >
 			<div class="side_social">
-			<center><img src="img/icons/Facebook.png" width="35px"><img src="img/icons/Twitter.png" width="35px"><img src="img/icons/Google Plus.png" width="35px"></center>
+			<center>
+                <?php
+                $faceb = '<a href="' . $object["facebook"] .'"> <img src="img/icons/Facebook.png" width="35px"><a/>';
+                $twitter = '<a href="' . $object["twitter"] .'"> <img src="img/icons/Twitter.png" width="35px"><a/>';
+                $googlepluss = '<a href="' . $object["googlepluss"] .'"> <img src="img/icons/Google Plus.png" width="35px"><a/>';
+
+                if($object['facebook'] == !null) echo $faceb;
+                if($object['twitter'] == !null) echo $twitter;
+                if($object['googlepluss'] == !null) echo $googlepluss;
+
+
+
+
+                ?>
+            </center>
 			</div>
 		</div>
 	</div>
