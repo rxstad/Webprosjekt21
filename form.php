@@ -64,6 +64,7 @@ function addtime(type) {
 
         tilDiv.removeChild(tilDiv.childNodes[tilDiv.childNodes.length-1]);
     }
+    console.log(document.getElementById("tid"));
 }
 //ikke i bruk
 function checkForEvent(type) {
