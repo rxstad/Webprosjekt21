@@ -1,0 +1,87 @@
+body {
+
+}
+#topbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	background: #000;
+	position: fixed;
+	width: 100%;
+	opacity: 0.3;
+	transition: 0.3s;
+	z-index: 1;
+}
+#topbar:hover {
+	opacity: 0.6;
+}
+#topbar a {
+	text-decoration: none;
+	opacity: 1;
+	color: #fff;
+}
+#header {
+	width: 100%;
+	height: 400px;
+	background: #6DAFC7;
+	color: #fff;
+	position: relative;
+	z-index: -1;
+}
+#wrapper {
+	max-width: 1100px;
+	height: auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+#main {
+	float: right;
+	min-width: 400px;
+	max-width: 800px;
+	margin-top: 20px;
+	height: auto;
+}
+.place_title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 2.5em;
+	margin-bottom: 20px;
+}
+.place_photos {
+	background: #ddd;
+	height: 400px;
+	max-width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+#se_mer_knapp {
+	text-decoration: none;
+	color: #444;
+	transition: 0.2s;
+}
+#text_area {
+	transition: 0.5s ease;
+}
+#sidebar {
+	float: left;
+	width: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: #efefef;
+	padding-bottom: 20px;
+	margin-top: -110px;
+	z-index: -1;
+}
+#sidebar hr {
+	width: 240px;
+	border: 0;
+	height: 1px;
+	background: #ddd;
+	margin-left: -20px;
+}
+.side_thumbnail {
+	margin-left: -20px;
+	margin-bottom: 20px;
+}

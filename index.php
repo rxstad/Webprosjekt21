@@ -30,8 +30,6 @@ require("header.php");
             </form>
 
 
-
-			<a href="results.html" class="button">Midlertidig resultatlink</a>
 		</div>
 	</div>
 	<div class="header_img"></div>
@@ -83,9 +81,11 @@ require("header.php");
 				<div class="footer_copyright">
 				Vilkår for bruk &#8226; Personvernerklæring<br>
 				MADE IN OSLO, NORWAY © 2017
-	</div>
 		</div>
+	</div>
 		
 </div>
+</div>
+
 </body>
 </html>

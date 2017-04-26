@@ -108,27 +108,6 @@ input[type=text]::-webkit-slider-thumb {
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
 	color:    #444;
 }
-/* Midlertidig knapp */
-a.button {
-	background: transparent;
-	color: #fff;
-    text-decoration: none;
-    color: initial;
-    font-size: 8px;
-    padding: 5px;
-    border: 0px solid #fff;
-    opacity: 0.3;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    transition: letter-spacing 0.5s linear, opacity 0.5s;
- }
- a.button:hover {
- 	opacity: 1;
- 	letter-spacing: 2px;
- 	cursor: pointer;
- }
 
  /* =============== UNDER HEADER =============== */
 
