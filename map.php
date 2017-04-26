@@ -18,11 +18,13 @@ $lng = explode('lng: ', $coords)[1];
       function initMap() {
 
 
-          var sted = {<?php echo $object['coordinater'] ?>};
+          var sted = {<?php echo $coords ?>};
           var fjerdingen = {lat: 59.9160539, lng: 10.7599923};
+          var vulkan = {lat: 59.9197317, lng: 10.7473439};
+          var center = {lat: 59.9195837, lng: 10.750899};
         var map = new google.maps.Map(document.getElementById('header'), {
-          zoom: 15,
-          center: fjerdingen,
+          zoom: 14,
+          center: center,
            styles: [
     {
         "featureType": "administrative",
@@ -172,14 +174,20 @@ $lng = explode('lng: ', $coords)[1];
         });
 
         var fjerdingenImg = {
-              url: 'img/GreenIcon.png',
-          scaledSize: new google.maps.Size(20,30)};
+              url: 'img/westerdalslogo.png',
+          scaledSize: new google.maps.Size(60,30)};
 
         var fjerdingenMrk = new google.maps.Marker({
           position: fjerdingen,
           map: map,
           icon: fjerdingenImg
         });
+
+          var vulkan = new google.maps.Marker({
+              position: vulkan,
+              map: map,
+              icon: fjerdingenImg
+          });
 
           var stedMrk = new google.maps.Marker({
               position: sted,

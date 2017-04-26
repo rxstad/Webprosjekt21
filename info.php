@@ -31,9 +31,9 @@ require ("inforesults.php");
 
 			<div class="side_thumbnail"><img src="<?= $object['img'] ?>" width="240px" height="240px"></div>
 
-			<img src="img/icons/Phone.png" width="20px"> 986 54 765
+			<img src="img/icons/Phone.png" width="20px"> <?= $object['tlf'] ?>
 			<hr >
-			Adresse 
+            <?= $object['adresse'] ?>
 
 			<hr >
 			<h4>Åpningstider</h4>
