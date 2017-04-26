@@ -10,8 +10,8 @@ require ("inforesults.php");
 	<div id="header">
         <?php require("map.php");?>
 
-		//<br><br><br><br><br><br><br><br><br><br>
-		//<center><h3>Kart</h3></center>
+		<br><br><br><br><br><br><br><br><br><br>
+		<center><h3>Kart</h3></center>
 	</div>
 	<div id="wrapper">
 
