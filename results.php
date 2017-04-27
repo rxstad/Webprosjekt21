@@ -27,7 +27,6 @@ require ("search.php")
 
 	<div id="wrapper">
 		<div id="main">
-		<h2>Resultater</h2>
 
 		<div id="resultsflex">
 

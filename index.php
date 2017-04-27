@@ -18,7 +18,7 @@ require("header.php");
 	</div>
 	<div id="header_search_outer">
 		<div class="header_search_logo">
-			<a href="index.html"><img src="img/logo.png" width="95px"></a>
+			<a href="index.php"><img src="img/logo_white.png" width="95px"></a>
 		</div>
 		<div class="header_search_inner">
 			<h2>Jeg vil</h2>
