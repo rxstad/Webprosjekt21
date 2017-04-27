@@ -11,6 +11,9 @@ $lng = explode('lng: ', $coords)[1];
     <div id="map" style="z-index: 10"></div>
     <script>
 
+
+
+
         function initMap() {
 
             var sted = {<?php echo $coords ?>};
@@ -173,7 +176,7 @@ $lng = explode('lng: ', $coords)[1];
 
         var fjerdingenImg = {
               url: 'img/westerdalslogo.png',
-          scaledSize: new google.maps.Size(60,30)};
+          scaledSize: new google.maps.Size(50,50)};
 
         var fjerdingenMrk = new google.maps.Marker({
           position: fjerdingen,
@@ -193,16 +196,16 @@ $lng = explode('lng: ', $coords)[1];
           });
 
           var stedinf = new google.maps.Data({
-
-          })
+              placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
+          });
 
             var request = {
                 placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
             };
 
 
-          console.log(fjerdingenMrk);
-          console.log(stedMrk);
+         // console.log(fjerdingenMrk);
+          console.log(stedinf.opening_hours);
 
 
       }
