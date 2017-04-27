@@ -19,7 +19,7 @@
 	
 }
 .header_search_inner {
-	width: 500px;
+	width: 1000px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -33,7 +33,7 @@
 	overflow: hidden;
 }
 .header_img {
-	background: url('img/shops/coffeeshop.jpg') center center;
+	background: url('img/shops/opera.jpg') center center;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
