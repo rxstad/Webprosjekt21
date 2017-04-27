@@ -8,7 +8,7 @@ $lng = explode('lng: ', $coords)[1];
 
 ?>
 
-    <div id="map" style="z-index: 10"></div>
+<div id="map" style="z-index: 10"></div>
     <script>
 
 
@@ -184,18 +184,21 @@ $lng = explode('lng: ', $coords)[1];
         var fjerdingenMrk = new google.maps.Marker({
           position: fjerdingen,
           map: map,
-          icon: fjerdingenImg
+          icon: fjerdingenImg,
+            title: "fjerdingen"
         });
 
         var brenneriveien = new google.maps.Marker({
             position: brenneriveien,
             map: map,
-            icon: fjerdingenImg
+            icon: fjerdingenImg,
+            title: "brenneriveien"
           });
         var vulkan = new google.maps.Marker({
             position: vulkan,
             map: map,
-            icon: fjerdingenImg
+            icon: fjerdingenImg,
+            title: "vulkan"
           });
         var stedMrk = new google.maps.Marker({
             position: sted,
@@ -209,7 +212,6 @@ $lng = explode('lng: ', $coords)[1];
         var request = {
             placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
         };
-
 
          // console.log(fjerdingenMrk);
           console.log(stedinf.opening_hours);

@@ -63,6 +63,7 @@ require ("inforesults.php");
             </center>
 			</div>
 		</div>
+
 	</div>
 	
 
@@ -86,4 +87,4 @@ function toggle_text()
 
     <script type="text/javascript" src="mapAPI.js"></script>
 
-</body>
+</body onload="initialize()">
