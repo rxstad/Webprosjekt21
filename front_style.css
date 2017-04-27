@@ -8,6 +8,48 @@ http://shouldiprefix.com/#gradients
 #6DAFC7 a4cddc
  */
 
+
+#header_menu {
+	width: 100%;
+	height: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #fff;
+	position: fixed;
+	z-index: 50;
+}
+.header_menu_inner {
+	max-width: 1000px;
+	min-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #efefef;
+	z-index: 51;
+}
+.header_menu_logo {
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 8px;
+}
+.header_menu_child {
+	float: right;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+.header_menu_child a {
+	text-decoration: none;
+	color: #000;
+	margin-left: 15px;
+	padding: 10px;
+	transition: 0.4s;
+}
+.header_menu_child a:hover {
+	color: #6DAFC7;
+}
+
+
 /* =============== Header =============== */
 #header {
 	background: -moz-linear-gradient(top, #6DAFC7 0%, #a4cddc 100%);
@@ -47,7 +89,7 @@ http://shouldiprefix.com/#gradients
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 12vh;
+	margin-top: 30vh;
 	position: relative;
 	z-index: 4;
 	padding: 10px;
@@ -76,12 +118,12 @@ http://shouldiprefix.com/#gradients
 input[type=text] {
     width: 190px;
     -webkit-transition: width 0.4s ease-in-out;
-    color: #000;
+    color: #fff;
     font-size: 17pt;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     transition: width 0.5s ease-in-out;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background: transparent;
 	border-bottom: 2px solid #fff;
 	border-top: 0; border-right: 0;border-left: 0;
@@ -95,18 +137,18 @@ input[type=text]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-	color:    #444;
+	color:    #efefef;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	color:    #444;
+	color:    #efefef;
 	opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-	color:    #444;
+	color:    #efefef;
 	opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-	color:    #444;
+	color:    #efefef;
 }
 
  /* =============== UNDER HEADER =============== */

@@ -6,27 +6,25 @@ require("header.php");
 
 <body>
 <div id="header">
-	<div id="top_menu_fadein">
+	<div id="header_menu">
+	<div class="header_menu_inner">
+	<div class="header_menu_logo"><a href="index.php"><img src="img/logo_greenblue.png" width="50px"></a></div>
+	<div class="header_menu_child">
+	<a href="index.php">Hjem</a>
+	<a href="#">Kategorier</a>
+	<a href="#">Om</a>
+	<a href="#">Hjelp</a>
+	</div>
+	</div>
+	</div>
 	
-	<div class="top_menu">
-		<a href="#">Hjem</a>
-		<a href="#">Kategorier</a>
-		<a href="om.html">Om</a>
-		<a href="#">Hjelp</a>
-	</div>
-
-	</div>
 	<div id="header_search_outer">
-		<div class="header_search_logo">
-			<a href="index.php"><img src="img/logo_white.png" width="95px"></a>
-		</div>
 		<div class="header_search_inner">
 			<h2>Jeg vil</h2>
 
 
             <form method="post" action="results.php?go" id="searchform">
-			<input type="text" name="search" placeholder="Søk ..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Søk ...'"><br><br>
-                <input  type="submit" name="submit" value="Search">
+			<input type="text" name="search" placeholder="Søk + enter" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Søk + enter'">
             </form>
 
 
