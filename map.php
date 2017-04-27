@@ -176,7 +176,9 @@ $lng = explode('lng: ', $coords)[1];
 
         var fjerdingenImg = {
               url: 'img/westerdalslogo.png',
-          scaledSize: new google.maps.Size(50,50)};
+
+          scaledSize: new google.maps.Size(50 ,50)};
+
 
         var fjerdingenMrk = new google.maps.Marker({
           position: fjerdingen,
