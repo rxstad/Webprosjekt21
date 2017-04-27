@@ -47,7 +47,7 @@ require ("googleJson.php");
 			<div class="side_thumbnail"><img src="<?= $object['img'] ?>" width="240px" height="240px"></div>
 
 			<img src="img/icons/Phone.png" width="20px"> <?= $object['tlf'] ?>
-			<hr >
+			<hr>
             <?= $object['adresse'] ?>
 
 			<hr >

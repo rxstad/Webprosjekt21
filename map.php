@@ -168,7 +168,7 @@ $lng = explode('lng: ', $coords)[1];
         "elementType": "all",
         "stylers": [
             {
-                "color": "#6dafc7"#8CC295
+                "color": "#6dafc7"
             },
             {
                 "visibility": "on"
@@ -191,13 +191,13 @@ $lng = explode('lng: ', $coords)[1];
             title: "fjerdingen"
         });
 
-        var brenneriveien = new google.maps.Marker({
+        var brenneriveienmrk = new google.maps.Marker({
             position: brenneriveien,
             map: map,
             icon: fjerdingenImg,
             title: "brenneriveien"
           });
-        var vulkan = new google.maps.Marker({
+        var vulkanmrk = new google.maps.Marker({
             position: vulkan,
             map: map,
             icon: fjerdingenImg,
