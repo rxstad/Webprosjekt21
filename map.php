@@ -10,9 +10,10 @@ $lng = explode('lng: ', $coords)[1];
 
     <div id="map" style="z-index: 10"></div>
     <script>
+
         function initMap() {
 
-          var sted = {<?php echo $coords ?>};
+            var sted = {<?php echo $coords ?>};
           var fjerdingen = {lat: 59.9160539, lng: 10.7599923};
           var vulkan = {lat: 59.9197317, lng: 10.7473439};
           var map = new google.maps.Map(document.getElementById('header'), {
@@ -160,7 +161,7 @@ $lng = explode('lng: ', $coords)[1];
         "elementType": "all",
         "stylers": [
             {
-                "color": "#46bcec"
+                "color": "#6dafc7"
             },
             {
                 "visibility": "on"
@@ -191,6 +192,15 @@ $lng = explode('lng: ', $coords)[1];
               map: map
           });
 
+          var stedinf = new google.maps.Data({
+
+          })
+
+            var request = {
+                placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
+            };
+
+
           console.log(fjerdingenMrk);
           console.log(stedMrk);
 
@@ -200,3 +210,4 @@ $lng = explode('lng: ', $coords)[1];
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1IhX-ZfFJSXeY0rTkotYPIj8V2s2BXFs&libraries=places&callback=initMap">
     </script>
+
