@@ -6,24 +6,24 @@
 	background: -ms-linear-gradient(top, #6DAFC7 0%, #a4cddc 100%); /* Internet Explorer 10-11 */
 	background: linear-gradient(to bottom, #6DAFC7 0%, #a4cddc 100%);
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	position: relative;
 	overflow: hidden;
 }
 #header_search_outer {
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	font-family: 'Montserrat', sans-serif;
 	position: absolute;
 	z-index: 3;
 	
 }
 .header_search_inner {
-	width: 400px;
+	width: 500px;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4vh;
+	margin-top: 15vh;
 	position: relative;
 	z-index: 4;
 	padding: 10px;
@@ -76,6 +76,7 @@
  	height: auto;
  	width: 100%;
  	background: #fff;
+ 	margin-top: 30px;
 }
 .resultsflex_item {
 	flex-grow: 1;

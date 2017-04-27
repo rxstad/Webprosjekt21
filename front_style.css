@@ -9,47 +9,6 @@ http://shouldiprefix.com/#gradients
  */
 
 
-#header_menu {
-	width: 100%;
-	height: 40px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: #fff;
-	position: fixed;
-	z-index: 50;
-}
-.header_menu_inner {
-	max-width: 1000px;
-	min-width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	background: #efefef;
-	z-index: 51;
-}
-.header_menu_logo {
-	position: absolute;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 8px;
-}
-.header_menu_child {
-	float: right;
-	padding: 10px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-}
-.header_menu_child a {
-	text-decoration: none;
-	color: #000;
-	margin-left: 15px;
-	padding: 10px;
-	transition: 0.4s;
-}
-.header_menu_child a:hover {
-	color: #6DAFC7;
-}
-
-
 /* =============== Header =============== */
 #header {
 	background: -moz-linear-gradient(top, #6DAFC7 0%, #a4cddc 100%);
@@ -149,6 +108,11 @@ input[type=text]::-webkit-slider-thumb {
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
 	color:    #efefef;
+}
+
+input[type=submit]
+{
+    display:none;
 }
 
  /* =============== UNDER HEADER =============== */

@@ -165,7 +165,7 @@ $lng = explode('lng: ', $coords)[1];
         "elementType": "all",
         "stylers": [
             {
-                "color": "#6dafc7"
+                "color": "#6dafc7"#8CC295
             },
             {
                 "visibility": "on"
