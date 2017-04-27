@@ -18,7 +18,8 @@ $lng = explode('lng: ', $coords)[1];
 
             var sted = {<?php echo $coords ?>};
           var fjerdingen = {lat: 59.9160539, lng: 10.7599923};
-          var vulkan = {lat: 59.9197317, lng: 10.7473439};
+          var brenneriveien = {lat: 59.9197317, lng: 10.7473439};
+          var vulkan = {lat: 59.923429, lng: 10.751666};
           var map = new google.maps.Map(document.getElementById('header'), {
           zoom: 14,
           center: sted,
@@ -186,24 +187,28 @@ $lng = explode('lng: ', $coords)[1];
           icon: fjerdingenImg
         });
 
-          var vulkan = new google.maps.Marker({
-              position: vulkan,
-              map: map,
-              icon: fjerdingenImg
+        var brenneriveien = new google.maps.Marker({
+            position: brenneriveien,
+            map: map,
+            icon: fjerdingenImg
+          });
+        var vulkan = new google.maps.Marker({
+            position: vulkan,
+            map: map,
+            icon: fjerdingenImg
+          });
+        var stedMrk = new google.maps.Marker({
+            position: sted,
+            map: map
           });
 
-          var stedMrk = new google.maps.Marker({
-              position: sted,
-              map: map
+        var stedinf = new google.maps.Data({
+            placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
           });
 
-          var stedinf = new google.maps.Data({
-              placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
-          });
-
-            var request = {
-                placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
-            };
+        var request = {
+            placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
+        };
 
 
          // console.log(fjerdingenMrk);
