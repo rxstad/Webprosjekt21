@@ -6,17 +6,20 @@ $lat = explode(',', explode('lat: ', $coords)[1])[0];
 $lng = explode('lng: ', $coords)[1];
 
 
+//$maps_content = file_get_contents('https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=AIzaSyD1IhX-ZfFJSXeY0rTkotYPIj8V2s2BXFs');
+//$maps_array = json_decode($maps_content, true);
+//$dstOffset = $maps_array['dstOffset'];
+//var_dump($maps_array);
 ?>
+
 
 <div id="map" style="z-index: 10"></div>
     <script>
 
 
-
-
         function initMap() {
 
-            var sted = {<?php echo $coords ?>};
+          var sted = {<?php echo $coords ?>};
           var fjerdingen = {lat: 59.9160539, lng: 10.7599923};
           var brenneriveien = {lat: 59.9197317, lng: 10.7473439};
           var vulkan = {lat: 59.923429, lng: 10.751666};
@@ -213,8 +216,6 @@ $lng = explode('lng: ', $coords)[1];
             placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4'
         };
 
-         // console.log(fjerdingenMrk);
-          console.log(stedinf.opening_hours);
 
 
       }

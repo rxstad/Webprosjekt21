@@ -1,6 +1,7 @@
 <?php
 require("header.php");
 require ("inforesults.php");
+require ("googleJson.php");
 
 ?>
 <link rel="stylesheet" type="text/css" href="info_style.css">
@@ -51,14 +52,21 @@ require ("inforesults.php");
 
 			<hr >
 			<h4>Åpningstider</h4>
-			M 07-23<br>
+            <script>
+                for(i = 0; i< jSonReq.result.opening_hours.weekday_text[].length; i++){
+                    document.write(jSonReq.result.opening_hours.weekday_text[i] <br>);
+                    console.log(jSonReq.result.opening_hours.weekday_text[i]);
+
+                };
+			/*M 07-23<br>
 			T 07-23<br>
 			O 07-23<br>
 			T 07-23<br>
 			F 07-23<br>
 			L 07-23<br>
-			S 07-23
+			S 07-23*/
 			<hr >
+            </script>
 			<div class="side_social">
 			<center>
                 <?php
