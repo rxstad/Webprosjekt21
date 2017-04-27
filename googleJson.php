@@ -12,9 +12,11 @@ $maps_array = json_decode($maps_content, true);
 
 <script>
     var jSonReq = JSON.parse(<?=json_encode($maps_content)?>);
-    console.log(jSonReq.result.opening_hours.weekday_text);
+    //console.log(jSonReq.result.opening_hours.weekday_text);
     //console.log(jSonReq.result.opening_hours.weekday_text[1]);
     //var day = jSonReq.result.opening_hours.weekday_text[];
 
-    for()
+    for(i = 0; i<5; i++){
+        console.log(i);
+    }
 </script>
