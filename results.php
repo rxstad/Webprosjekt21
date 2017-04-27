@@ -20,7 +20,7 @@ require ("search.php")
 	</div>
 	<div id="header_search_outer">
 		<div class="header_search_inner">
-		<h2><?print_r($result);?></h2>
+		<?print_r($result);?>
 		</div>
 	</div>
 	<div class="header_img"></div>

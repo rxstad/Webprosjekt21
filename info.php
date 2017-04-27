@@ -17,6 +17,8 @@ require ("inforesults.php");
 	</div>
 	</div>
 
+	<div id="go_back"><a href="javascript:history.back()">&larr; Tilbake til søkeresultatene</a></div>
+
 <body>
 	<div id="topbar"></div>
 	<div id="header">

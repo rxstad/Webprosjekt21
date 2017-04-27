@@ -23,13 +23,13 @@
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15vh;
+	margin-top: 19vh;
 	position: relative;
 	z-index: 4;
 	padding: 10px;
 	text-align: center;
 	color: #fff;
-	font-size: calc(12px + 0.8vw); /* Juster tekst størrelsen responsive */
+	font-size: calc(13px + 1.9vw); /* Juster tekst størrelsen responsive */
 	overflow: hidden;
 }
 .header_img {
