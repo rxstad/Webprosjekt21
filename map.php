@@ -30,6 +30,7 @@ $lng = explode('lng: ', $coords)[1];
             streetViewControl: false,
             rotateControl: false,
             scaleControl: false,
+            scrollwheel: false,
             styles: [
     {
         "featureType": "administrative",
