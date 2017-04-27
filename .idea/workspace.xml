@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c7ce470-73bc-4924-a81d-0273b3686da2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/googleJson.php" afterPath="$PROJECT_DIR$/googleJson.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/info.php" afterPath="$PROJECT_DIR$/info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/map.php" afterPath="$PROJECT_DIR$/map.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,26 +42,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="info.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="info.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="68" column="22" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="68" selection-end-column="22" />
+            <state relative-caret-position="261">
+              <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="46" />
               <folding>
                 <element signature="e#532#538#0#HTML" expanded="true" />
-                <marker date="1493312483155" expanded="false" signature="642:662" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="820:837" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="884:908" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="1448:1464" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="1556:1572" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="1598:1618" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="2192:2844" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="2204:2834" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="2227:2811" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="2897:3579" ph="..." />
-                <marker date="1493312483155" expanded="false" signature="2947:3571" ph="{...}" />
-                <marker date="1493312483155" expanded="false" signature="3212:3377" ph="{...}" />
-                <marker date="1493312483155" expanded="false" signature="3404:3569" ph="{...}" />
+                <marker date="1493316640699" expanded="false" signature="642:662" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="820:837" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="884:908" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="1448:1464" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="1556:1572" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="1598:1618" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="2420:3072" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="2432:3062" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="2455:3039" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="3125:3807" ph="..." />
+                <marker date="1493316640699" expanded="false" signature="3175:3799" ph="{...}" />
+                <marker date="1493316640699" expanded="false" signature="3440:3605" ph="{...}" />
+                <marker date="1493316640699" expanded="false" signature="3632:3797" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -68,21 +70,21 @@
       <file leaf-file-name="map.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/map.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4241">
-              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+            <state relative-caret-position="-25">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <marker date="1493311815505" expanded="true" signature="453:464" ph="..." />
-                <marker date="1493311815505" expanded="true" signature="515:551" ph="{...}" />
+                <marker date="1493313967181" expanded="true" signature="160:171" ph="..." />
+                <marker date="1493313967181" expanded="true" signature="222:258" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="googleJson.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="googleJson.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/googleJson.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="425">
+              <caret line="17" column="79" lean-forward="false" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -173,6 +175,7 @@
     <findStrings>
       <find>var sted =</find>
       <find>&lt;</find>
+      <find>jSonReq.result</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -408,12 +411,12 @@
       <workItem from="1491559584762" duration="1907000" />
       <workItem from="1492677368105" duration="8499000" />
       <workItem from="1493050522440" duration="19231000" />
-      <workItem from="1493206778060" duration="47507000" />
+      <workItem from="1493206778060" duration="51686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153798000" />
+    <option name="totallyTimeSpent" value="157977000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -896,43 +899,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/map.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4241">
-          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+        <state relative-caret-position="-25">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <marker date="1493311815505" expanded="true" signature="453:464" ph="..." />
-            <marker date="1493311815505" expanded="true" signature="515:551" ph="{...}" />
+            <marker date="1493313967181" expanded="true" signature="160:171" ph="..." />
+            <marker date="1493313967181" expanded="true" signature="222:258" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="46" />
+          <folding>
+            <element signature="e#532#538#0#HTML" expanded="true" />
+            <marker date="1493316640699" expanded="false" signature="642:662" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="820:837" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="884:908" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="1448:1464" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="1556:1572" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="1598:1618" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="2420:3072" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="2432:3062" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="2455:3039" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="3125:3807" ph="..." />
+            <marker date="1493316640699" expanded="false" signature="3175:3799" ph="{...}" />
+            <marker date="1493316640699" expanded="false" signature="3440:3605" ph="{...}" />
+            <marker date="1493316640699" expanded="false" signature="3632:3797" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/googleJson.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="425">
+          <caret line="17" column="79" lean-forward="false" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/info.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="68" column="22" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="e#532#538#0#HTML" expanded="true" />
-            <marker date="1493312483155" expanded="false" signature="642:662" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="820:837" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="884:908" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="1448:1464" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="1556:1572" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="1598:1618" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="2192:2844" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="2204:2834" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="2227:2811" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="2897:3579" ph="..." />
-            <marker date="1493312483155" expanded="false" signature="2947:3571" ph="{...}" />
-            <marker date="1493312483155" expanded="false" signature="3212:3377" ph="{...}" />
-            <marker date="1493312483155" expanded="false" signature="3404:3569" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -53,12 +53,16 @@ require ("googleJson.php");
 			<hr >
 			<h4>Åpningstider</h4>
             <script>
-                //console.log(jSonReq.result.opening_hours.weekday_text);
-                for(i = 0; i< jSonReq.result.opening_hours.weekday_text.length; i++){
-                    document.write(jSonReq.result.opening_hours.weekday_text[i]+'<br>');
-                    console.log(jSonReq.result.opening_hours.weekday_text[i]);
-
-                };
+                if(typeof jSonReq === 'object') {
+                    for (i = 0; i < jSonReq.result.opening_hours.weekday_text.length; i++) {
+                        document.write(jSonReq.result.opening_hours.weekday_text[i] + '<br>');
+                        console.log(jSonReq.result.opening_hours.weekday_text[i]);
+                        console.log("nummer: 1" + jSonReq);
+                    }
+                }else{
+                    document.write('Ingen åpningstider registrert for denne siden.');
+                    console.log("nummer: 2");
+                }
             </script>
 			<!--M 07-23<br>
 			T 07-23<br>
