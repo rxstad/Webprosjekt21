@@ -32,7 +32,6 @@ require("header.php");
 
 		</div>
 	</div>
-	<div class="header_img"></div>
 
 	<video playsinline autoplay muted loop id="bgvid">
     <source src="img/snow_footage.mp4" type="video/mp4">
@@ -84,7 +83,7 @@ require("header.php");
 			</div>
 
 			<div style="float:left; width: 40%">
-			<img src="img/westerlife_iphone_see.png" class="iphone" width="340px">
+			<img src="img/westerlife_iphone.png" class="iphone" width="340px">
 			</div>
 			
 		</div>
