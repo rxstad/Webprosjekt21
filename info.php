@@ -4,6 +4,7 @@ require ("inforesults.php");
 require ("googleJson.php");
 
 ?>
+
 <link rel="stylesheet" type="text/css" href="info_style.css">
 
 <div id="header_menu">
@@ -18,7 +19,7 @@ require ("googleJson.php");
 	</div>
 	</div>
 
-	<div id="go_back"><a href="javascript:history.back()">&larr; Tilbake til søkeresultatene</a></div>
+	<a href="javascript:history.back()"><div id="go_back">&larr; Tilbake til søkeresultatene</div></a>
 
 <body>
 	<div id="topbar"></div>
@@ -32,13 +33,21 @@ require ("googleJson.php");
 
 		<div id="main">
 			<div class="place_title"><?= $object['navn'] ?></div>
-			<div class="place_description"> <?= $object['beskrivelse'] ?>
 
-			<!--Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat magna aliqua.--> <p id="text_area"></p><h3><a id="se_mer_knapp" onclick="toggle_text();" href="javascript:void(0);">Les mer</a></h3>
- 			</div>
+			
+  				
+			<div class="read_more" tabindex="0">
+				<?= $object['beskrivelse'] ?>	
+			   
+			</div>
+	
+
+
+
+
+
+
+
 			<div class="place_photos"><center><h2>Bilder</h2></center></div>
 
 		</div>
@@ -93,25 +102,7 @@ require ("googleJson.php");
 		</div>
 
 	</div>
-	
 
-<script type="text/javascript">
-	var status = "mindre";
-
-function toggle_text()
-{
-    var text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-    
-    if (status == "mindre") {
-        document.getElementById("text_area").innerHTML=text;
-        document.getElementById("se_mer_knapp").innerText = "Se mindre";
-        status = "mer";
-    } else if (status == "mer") {
-        document.getElementById("text_area").innerHTML = "";
-        document.getElementById("se_mer_knapp").innerText = "Les mer";
-        status = "mindre"
-    }
-}</script>
 
     <script type="text/javascript" src="mapAPI.js"></script>
 

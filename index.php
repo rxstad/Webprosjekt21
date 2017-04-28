@@ -17,6 +17,7 @@ require("header.php");
 	</div>
 	</div>
 	</div>
+
 	
 	<div id="header_search_outer">
 		<div class="header_search_inner">
@@ -32,6 +33,11 @@ require("header.php");
 		</div>
 	</div>
 	<div class="header_img"></div>
+
+	<video playsinline autoplay muted loop id="bgvid">
+    <source src="img/snow_footage.mp4" type="video/mp4">
+</video>
+
 </div>
 <div id="wrapper">
 	<div id="main">
@@ -63,28 +69,32 @@ require("header.php");
 			</div>
 		</div>
 
+
+
 	</div>
-</div>
-<div id="footer">
-	<div class="inner_footer">
-		<div style="float:left; padding-top: 4%; width:60%">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-				<br><br>
-				<img src="img/social/facebook.svg" width="20px" class="footer_social_img">&nbsp;&nbsp;
-				<img src="img/social/instagram.svg" width="20px" class="footer_social_img">&nbsp;&nbsp;
-				<img src="img/social/tumblr.svg" width="20px" class="footer_social_img">&nbsp;&nbsp;
-				<img src="img/social/twitter.svg" width="20px" class="footer_social_img">&nbsp;&nbsp;
-		</div>
-		<div style="float:left; padding-top: 9%; text-align: right; width:40%">
-				<div class="footer_copyright">
-				Vilkår for bruk &#8226; Personvernerklæring<br>
-				MADE IN OSLO, NORWAY © 2017
+
+	<div id="main_info">
+		<div class="main_info_wrap">
+
+			<div style="float:left; width: 45%; margin-left: 5%; margin-top: 100px">
+			<h1>WesterLife</h1>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere diam nec magna ultrices luctus. Nunc sed purus eu quam aliquam laoreet. Donec laoreet justo eu varius aliquet. <br><br>Praesent tincidunt neque id mauris rutrum venenatis. Aliquam tincidunt felis sem, quis auctor neque consequat in. Phasellus nec leo sit amet dui aliquet tempus.<br><br>
+
+			<button>Les mer om oss</button>
+			</div>
+
+			<div style="float:left; width: 40%">
+			<img src="img/westerlife_iphone_see.png" class="iphone" width="340px">
+			</div>
+			
 		</div>
 	</div>
-		
+	
 </div>
-</div>
+
+<?php
+require("footer.php");
+?>
 
 </body>
 </html>
