@@ -11,7 +11,6 @@ http://shouldiprefix.com/#gradients
 
 /* =============== Header =============== */
 #header {
-	background: #000;
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -97,19 +96,46 @@ input[type=submit]
 {
     display:none;
 }
-video#bgvid { 
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
-    -webkit-transform: translateX(50%) translateY(50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: #000;
-    background-size: cover; 
+
+.fullscreen_bg {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.fullscreen_bg_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen_bg_video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen_bg_video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fullscreen_bg {
+    background: url('/img/vulkan.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen_bg_video {
+    display: none;
+  }
 }
 
  /* =============== UNDER HEADER =============== */

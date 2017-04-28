@@ -6,6 +6,7 @@ require("header.php");
 
 <body>
 <div id="header">
+
 	<div id="header_menu">
 	<div class="header_menu_inner">
 	<div class="header_menu_logo"><a href="index.php"><img src="img/logo_greenblue.png" width="50px"></a></div>
@@ -18,6 +19,7 @@ require("header.php");
 	</div>
 	</div>
 
+    <source src="img/snow_footage.mp4" type="video/mp4">
 	
 	<div id="header_search_outer">
 		<div class="header_search_inner">
@@ -32,10 +34,12 @@ require("header.php");
 
 		</div>
 	</div>
-
-	<video playsinline autoplay muted loop id="bgvid">
-    <source src="img/snow_footage.mp4" type="video/mp4">
-</video>
+	
+	<div class="fullscreen_bg">
+   	 <video loop muted autoplay loop class="fullscreen_bg_video">
+ 			<source src="img/snow_footage.mp4" type="video/mp4">
+   	 </video>
+	</div>
 
 </div>
 <div id="wrapper">
@@ -75,7 +79,7 @@ require("header.php");
 	<div id="main_info">
 		<div class="main_info_wrap">
 
-			<div style="float:left; width: 45%; margin-left: 5%; margin-top: 100px">
+			<div style="float:left; width: 45%; margin-left: 5%; margin-top: 80px">
 			<h1>WesterLife</h1>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere diam nec magna ultrices luctus. Nunc sed purus eu quam aliquam laoreet. Donec laoreet justo eu varius aliquet. <br><br>Praesent tincidunt neque id mauris rutrum venenatis. Aliquam tincidunt felis sem, quis auctor neque consequat in. Phasellus nec leo sit amet dui aliquet tempus.<br><br>
 
