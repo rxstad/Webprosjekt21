@@ -62,7 +62,7 @@ require ("googleJson.php");
 			<hr >
 			<h4>Åpningstider</h4>
             <script>
-                if(typeof jSonReq === 'object') {
+                if(jSonReq.result.opening_hours) {
                     for (i = 0; i < jSonReq.result.opening_hours.weekday_text.length; i++) {
                         document.write(jSonReq.result.opening_hours.weekday_text[i] + '<br>');
                         console.log(jSonReq.result.opening_hours.weekday_text[i]);
