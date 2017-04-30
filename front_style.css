@@ -131,7 +131,6 @@ input[type=submit]
 @media (max-width: 767px) {
   .fullscreen_bg {
     background: url('/img/vulkan.jpg') center center / cover no-repeat;
-    background: #000;
   }
 
   .fullscreen_bg_video {

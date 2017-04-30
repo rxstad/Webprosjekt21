@@ -1,23 +1,14 @@
 <?php
 require("config.php");
-require ("header.php");
-require ("search.php")
+require("header.php");
+require("header_menu.php");
+require("search.php")
 ?>
 	<link rel="stylesheet" type="text/css" href="results_style.css">
 
 <body>
 <div id="header">
-<div id="header_menu">
-	<div class="header_menu_inner">
-	<div class="header_menu_logo"><a href="index.php"><img src="img/logo_greenblue.png" width="50px"></a></div>
-	<div class="header_menu_child">
-	<a href="index.php">Hjem</a>
-	<a href="#">Kategorier</a>
-	<a href="#">Om</a>
-	<a href="#">Hjelp</a>
-	</div>
-	</div>
-	</div>
+
 	<div id="header_search_outer">
 		<div class="header_search_inner">
 		<?print_r($result);?>

@@ -7,17 +7,9 @@ require ("googleJson.php");
 
 <link rel="stylesheet" type="text/css" href="info_style.css">
 
-<div id="header_menu">
-	<div class="header_menu_inner">
-	<div class="header_menu_logo"><a href="index.php"><img src="img/logo_greenblue.png" width="50px"></a></div>
-	<div class="header_menu_child">
-	<a href="index.php">Hjem</a>
-	<a href="#">Kategorier</a>
-	<a href="#">Om</a>
-	<a href="#">Hjelp</a>
-	</div>
-	</div>
-	</div>
+	<?php
+	require("header_menu.php");
+	?>
 
 	<a href="javascript:history.back()"><div id="go_back">&larr; Tilbake til søkeresultatene</div></a>
 

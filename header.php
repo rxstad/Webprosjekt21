@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Front</title>
+	<title>WesterLife</title>
 	<meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="main_style.css">
