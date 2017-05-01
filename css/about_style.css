@@ -1,7 +1,11 @@
 #header {
 	width: 100%;
 	height: 330px;
-	background: url(https://www.transparenttextures.com/patterns/clean-gray-paper.png) #A4C281;
+	background: -moz-linear-gradient(top, #6DAFC7 0%, #AFC672 100%);
+	background: -webkit-linear-gradient(top, #6DAFC7 0%, #AFC672 100%); /* WebKit, Blink, Edge */
+	background: -o-linear-gradient(top, #6DAFC7 0%, #AFC672 100%);
+	background: -ms-linear-gradient(top, #6DAFC7 0%, #AFC672 100%); /* Internet Explorer 10-11 */
+	background: linear-gradient(to bottom, #6DAFC7 0%, #AFC672 100%);
 	padding-top: 80px;
 	color: #fff;
 }

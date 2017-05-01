@@ -21,9 +21,13 @@ require("header_menu.php");
 
 
 		</div>
+
 	</div>
 	
+
 	<div class="fullscreen_bg">
+	<div class="arrow"><div class="arrow_wave"><span></span><span></span><span></span>
+</div></div>
    	 <video loop muted autoplay loop class="fullscreen_bg_video">
  			<source src="img/snow_footage.mp4" type="video/mp4">
    	 </video>
@@ -83,6 +87,7 @@ require("header_menu.php");
 	
 </div>
 
+<script type="text/javascript" src="js/arrow.js"></script>
 <?php
 require("footer.php");
 ?>

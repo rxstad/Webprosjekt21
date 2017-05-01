@@ -52,6 +52,84 @@ http://shouldiprefix.com/#gradients
 	font-size: calc(12px + 2vw); /* Juster tekst størrelsen responsive */
 	overflow: hidden;
 }
+.arrow {
+	position: absolute;
+	z-index: 999;
+	bottom: 10px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: auto;
+	height: auto;
+}
+.arrow_wave {
+	display: inline-block;
+	font-size: 0;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 100%;
+	height: auto;
+}
+
+.arrow_wave span {
+	display: block;
+	position: relative;
+	height: 10px;
+	width: 16px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.arrow_wave span::before,
+.arrow_wave span::after {
+	display: block;
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 12px;
+	background: #fff;
+}
+
+.arrow_wave span::before {
+	top: -2px;
+	left: 0;
+	transform-origin: left center;
+	transform: rotate(45deg);
+}
+
+.arrow_wave span::after {
+	top: -2px;
+	right: 0;
+	transform-origin: right center;
+	transform: rotate(-45deg);
+}
+
+.arrow_wave span:nth-child(1n) {
+	animation: animate_arrow_wave 2s infinite;
+	animation-delay: .25s;
+}
+.arrow_wave span:nth-child(2n) {
+	animation: animate_arrow_wave 2s infinite;
+	animation-delay: .50s;
+}
+
+.arrow_wave span:nth-child(3n) {
+	animation: animate_arrow_wave 2s infinite;
+	animation-delay: .75s;
+}
+
+@keyframes animate_arrow_wave {
+	0%   { opacity: 0.4; }
+	25%  { opacity: 0.4; }
+	50%  { opacity: 0.4; }
+	75%  { opacity: 1.0; }
+	100% { opacity: 0.4; }
+}
 input[type=text] {
     width: 190px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -69,6 +147,10 @@ input[type=text] {
 	padding-left: 5px;
 	border: 0;
 	padding-right: 5px;
+}
+.fade {
+	opacity:0;
+	transition: 1s;
 }
 input[type=text]:focus {
 	width: 355px;
@@ -128,7 +210,7 @@ input[type=submit]
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   .fullscreen_bg {
     background: url('/img/vulkan.jpg') center center / cover no-repeat;
   }
