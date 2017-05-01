@@ -36,11 +36,7 @@ h3 {
 	-webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.04);
     -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.04);
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.04);
-    opacity: 0.9;
     transition: 0.4s;
-}
-#header_menu:hover {
-	opacity: 1;
 }
 .header_menu_inner {
 	max-width: 1100px;
