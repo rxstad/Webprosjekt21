@@ -8,11 +8,9 @@ require("header_menu.php");
 <body>
 	<div id="header">
 		<div class="header_wrap">
-			<center><div class="header_tittel">
-				<h1>Om WesterLife</h1>
+			
+			<center><img src="img/wester_vulkan.png" width="550px" class="header_img"></center>
 			</div>
-			<img src="img/wester_vulkan.png" width="550px" class="header_img">
-			</center></div>
 	</div>
 
 	<div id="wrapper">
@@ -27,10 +25,15 @@ require("header_menu.php");
 			<hr ><br><br>
 
 			<h1>Teamet</h1>
+			<br><br><br>
+			<h1>Annet</h1>
+			Alle bilder som er brukt på nettsiden er lisensiert under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.no" target="blank">Creative Commons Zero</a> som betyr at du kan kopiere, endre, distribuere og bruke bildene gratis, inkludert kommersielle formål, uten å spørre om tillatelse fra eller gi henvisning til fotografen. <br>
 		</div>
 	</div>
 
 <?php
 require("footer.php");
 ?>
+
 </body>
+</html>

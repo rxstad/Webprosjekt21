@@ -1,7 +1,7 @@
 <div id="footer">
 	<div class="inner_footer">
 
-				Copyright © <?php echo date("Y"); ?> WesterLife
+				<?php echo date("Y"); ?> WesterLife
 				<br><br><br>
 				<!-- Facebook --><a href="https://facebook.com/sharer/sharer.php?u=%23"><img src="img/icons/Facebook.png" width="35px" class="footer_social_img"></a>&nbsp;&nbsp;
 

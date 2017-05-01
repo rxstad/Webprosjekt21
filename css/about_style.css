@@ -1,6 +1,6 @@
 #header {
 	width: 100%;
-	height: 330px;
+	height: 200px;
 	background: -moz-linear-gradient(top, #6DAFC7 0%, #AFC672 100%);
 	background: -webkit-linear-gradient(top, #6DAFC7 0%, #AFC672 100%); /* WebKit, Blink, Edge */
 	background: -o-linear-gradient(top, #6DAFC7 0%, #AFC672 100%);
@@ -15,14 +15,9 @@
 	margin-right: auto;
 	position: relative;
 }
-.header_tittel {
-	z-index: 4;
-}
-.header_tittel h1 {
-	font-size: 45pt;
-}
 .header_img {
 	margin-left: -130px;
+	margin-top: 23px;
 }
 #wrapper {
 	max-width: 1000px;
@@ -31,9 +26,12 @@
 	padding-top: 90px;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-bottom: 50px;
 }
 #main {
 	min-height: 400px;
+	color: #444;
+
 }
 #main h1 {
 	color: #000;
