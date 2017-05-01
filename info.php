@@ -49,10 +49,19 @@ require ("getImages.php");
 
 			<img src="img/icons/Phone.png" width="20px"> <?= $object['tlf'] ?>
 			<hr>
-            <?= $object['adresse'] ?>
 
-			<hr >
-			<h4>Åpningstider</h4>
+            <script>
+                if(jSonReq.result.formatted_address){
+                    console.log("json er : " + jSonReq.result.formatted_address);
+                    document.write(jSonReq.result.formatted_address);
+                }else{
+                    console.log("json er etter : " + jSonReq.result.formatted_address);
+                    document.write('Ingen adresse registrert for denne siden.');
+                }
+            </script>
+
+			<hr>
+			<h4>Åpningstider</h4> <!-- henter åpningstider fra googles database-->
             <script>
                 if(jSonReq.result.opening_hours) {
                     for (i = 0; i < jSonReq.result.opening_hours.weekday_text.length; i++) {
@@ -62,7 +71,6 @@ require ("getImages.php");
                     }
                 }else{
                     document.write('Ingen åpningstider registrert for denne siden.');
-                    console.log("nummer: 2");
                 }
             </script>
 			<!--M 07-23<br>
