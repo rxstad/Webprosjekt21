@@ -2,7 +2,7 @@
 require("header.php");
 require ("inforesults.php");
 require ("googleJson.php");
-
+require ("getImages.php");
 ?>
 
 <link rel="stylesheet" type="text/css" href="info_style.css">
@@ -32,20 +32,20 @@ require ("googleJson.php");
 				<?= $object['beskrivelse'] ?>	
 			   
 			</div>
-	
 
-
-
-
-
-
-
-			<div class="place_photos"><center><h2>Bilder</h2></center></div>
+			<div class="place_photos"><center><h2>
+                       <?php
+                        for($i=1; $i < sizeof($imgList); $i++){
+                           echo '<img src="'.$object['img']."/".$imgList[$i].'" width="240px" height="240px">';}
+                        ?>
+                        </h2></center></div>
 
 		</div>
 		<div id="sidebar">
 
-			<div class="side_thumbnail"><img src="<?= $object['img'] ?>" width="240px" height="240px"></div>
+			<div class="side_thumbnail">
+                    <img src="<?echo $object['img']."/".$imgList[0]; ?>" width="240px" height="240px">
+            </div>
 
 			<img src="img/icons/Phone.png" width="20px"> <?= $object['tlf'] ?>
 			<hr>
