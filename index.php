@@ -12,17 +12,12 @@ require("header_menu.php");
     <div id="header_search_outer">
         <div class="header_search_inner">
             <h2>Jeg vil</h2>
-
-
             <form method="post" action="results.php?go" id="searchform">
                 <input type="text" name="search" placeholder="Søk + enter" onfocus="this.placeholder = ''"
                        onblur="this.placeholder = 'Søk + enter'">
                 <input type="submit" name="submit" value="search">
             </form>
-
-
         </div>
-
     </div>
 
 
@@ -46,31 +41,59 @@ require("header_menu.php");
 
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="mat" name="search" hidden="true">
-                    <button type="submit" name="submit" value="mat"><img src="img/shops/mat1.jpg" class="imgitem_main"
-                                                                         width="100%"></button>
+                    <button type="submit" name="submit" value="mat">
+                        <img src="img/shops/mat1.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
                 <div class="imgdesc_main">Spise</div>
                 </a>
             </div>
             <div class="mainflex_item">
-                <img src="img/shops/opera.jpg" class="imgitem_main" width="100%">
+
+                <form method="post" action="results.php?go" id="searchform">
+                    <input type="text" value="opera" name="search" hidden="true">
+                    <button type="submit" name="submit" value="opera">
+                        <img src="img/shops/opera.jpg" class="imgitem_main" width="100%"></button>
+                </form>
+
+
                 <div class="imgdesc_main">Musem</div>
             </div>
             <div class="mainflex_item">
-                <img src="img/shops/nightlife.jpg" class="imgitem_main" width="100%">
+                <form method="post" action="results.php?go" id="searchform">
+                    <input type="text" value="uteliv" name="search" hidden="true">
+                    <button type="submit" name="submit" value="uteliv">
+                        <img src="img/shops/nightlife.jpg" class="imgitem_main" width="100%"></button>
+                </form>
+
+
                 <div class="imgdesc_main">Uteliv</div>
             </div>
             <div class="mainflex_item">
-                <img src="img/shops/park3.jpg" class="imgitem_main" width="100%">
+
+                <form method="post" action="results.php?go" id="searchform">
+                    <input type="text" value="park" name="search" hidden="true">
+                    <button type="submit" name="submit" value="park">
+                        <img src="img/shops/park3.jpg" class="imgitem_main" width="100%"></button>
+                </form>
+
                 <div class="imgdesc_main">Parker</div>
             </div>
             <div class="mainflex_item">
-                <img src="img/shops/coffeeshop2.jpg" class="imgitem_main" width="100%">
+                <form method="post" action="results.php?go" id="searchform">
+                    <input type="text" value="kaffe" name="search" hidden="true">
+                    <button type="submit" name="submit" value="kaffe">
+                        <img src="img/shops/coffeeshop2.jpg" class="imgitem_main" width="100%"></button>
+                </form>
+
                 <div class="imgdesc_main">Kaffe</div>
             </div>
             <div class="mainflex_item">
-                <img src="img/shops/windowpants.jpg" class="imgitem_main" width="100%">
+                <input type="text" value="butikk" name="search" hidden="true">
+                <button type="submit" name="submit" value="butikk">
+                    <img src="img/shops/windowpants.jpg" class="imgitem_main" width="100%"></button>
+                </form>
+
                 <div class="imgdesc_main">Shopping</div>
             </div>
         </div>

@@ -8,11 +8,11 @@
 
 $imgList = [];
 
-if ($handle = opendir("".$object['img'])) {
+if ($handle = opendir("" . $object['img'])) {
 
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            array_push($imgList,$entry);
+            array_push($imgList, $entry);
         }
 
     }
