@@ -3,7 +3,7 @@ require("header.php");
 require("header_menu.php");
 
 ?>
-<link rel="stylesheet" type="text/css" href="front_style.css">
+<link rel="stylesheet" type="text/css" href="css/front_style.css">
 
 <body>
 <div id="header">

@@ -4,7 +4,7 @@ require("header.php");
 require("header_menu.php");
 require("search.php")
 ?>
-<link rel="stylesheet" type="text/css" href="results_style.css">
+<link rel="stylesheet" type="text/css" href="css/results_style.css">
 
 <body>
 <div id="header">

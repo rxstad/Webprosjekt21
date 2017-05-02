@@ -5,7 +5,7 @@ require("googleJson.php");
 require("getImages.php");
 ?>
 
-<link rel="stylesheet" type="text/css" href="info_style.css">
+<link rel="stylesheet" type="text/css" href="css/info_style.css">
 
 <?php
 require("header_menu.php");

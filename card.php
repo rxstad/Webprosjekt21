@@ -5,7 +5,7 @@ require("search.php");
 header('Content-Type: text/html; charset=UTF-8');
 ?>
 
-    <link rel="stylesheet" type="text/css" href="results_style.css">
+    <link rel="stylesheet" type="text/css" href="css/results_style.css">
 <?php foreach ($events as $event) { ?>
 
 
