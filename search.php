@@ -11,8 +11,8 @@ if (isset($_POST['submit'])) {
         LEFT JOIN info ON steder.sted_id = info.sted_id
         WHERE upper(kategori) LIKE upper ('%$search%')
         OR UPPER (navn) LIKE upper ('%$search%') 
-        OR upper (beskrivelse) LIKE upper ('%$search%') 
-        OR upper (adresse) LIKE upper ('%$search%')")
+        OR upper (beskrivelse) LIKE upper ('%$search%')
+        ")
         or die("could not search");
 
         $res = $connection->query($sql);
