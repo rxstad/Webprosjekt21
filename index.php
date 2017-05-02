@@ -89,9 +89,10 @@ require("header_menu.php");
                 <div class="imgdesc_main">Kaffe</div>
             </div>
             <div class="mainflex_item">
-                <input type="text" value="butikk" name="search" hidden="true">
-                <button type="submit" name="submit" value="butikk">
-                    <img src="img/shops/windowpants.jpg" class="imgitem_main" width="100%"></button>
+                <form method="post" action="results.php?go" id="searchform">
+                    <input type="text" value="butikk" name="search" hidden="true">
+                    <button type="submit" name="submit" value="butikk">
+                        <img src="img/shops/windowpants.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
                 <div class="imgdesc_main">Shopping</div>
