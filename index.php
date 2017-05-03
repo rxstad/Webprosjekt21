@@ -41,7 +41,7 @@ require("header_menu.php");
 
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="mat" name="search" hidden="true">
-                    <button type="submit" name="submit" value="mat">
+                    <button type="submit" name="submit" value="mat" class="hide_button">
                         <img src="img/shops/mat1.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
@@ -52,7 +52,7 @@ require("header_menu.php");
 
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="opera" name="search" hidden="true">
-                    <button type="submit" name="submit" value="opera">
+                    <button type="submit" name="submit" value="opera" class="hide_button">
                         <img src="img/shops/opera.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
@@ -62,7 +62,7 @@ require("header_menu.php");
             <div class="mainflex_item">
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="uteliv" name="search" hidden="true">
-                    <button type="submit" name="submit" value="uteliv">
+                    <button type="submit" name="submit" value="uteliv" class="hide_button">
                         <img src="img/shops/nightlife.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
@@ -73,7 +73,7 @@ require("header_menu.php");
 
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="park" name="search" hidden="true">
-                    <button type="submit" name="submit" value="park">
+                    <button type="submit" name="submit" value="park" class="hide_button">
                         <img src="img/shops/park3.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
@@ -82,7 +82,7 @@ require("header_menu.php");
             <div class="mainflex_item">
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="kaffe" name="search" hidden="true">
-                    <button type="submit" name="submit" value="kaffe">
+                    <button type="submit" name="submit" value="kaffe" class="hide_button">
                         <img src="img/shops/coffeeshop2.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
@@ -91,7 +91,7 @@ require("header_menu.php");
             <div class="mainflex_item">
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="butikk" name="search" hidden="true">
-                    <button type="submit" name="submit" value="butikk">
+                    <button type="submit" name="submit" value="butikk" class="hide_button">
                         <img src="img/shops/windowpants.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 

@@ -3,9 +3,8 @@
 
         <?php echo date("Y"); ?> WesterLife
         <br><br><br>
-        <!-- Facebook --><a href="https://facebook.com/sharer/sharer.php?u=%23"><img src="img/icons/Facebook.png"
-                                                                                     width="35px"
-                                                                                     class="footer_social_img"></a>&nbsp;&nbsp;
+        <!-- Facebook --><a href="https://facebook.com/sharer/sharer.php?u=%23">
+        <img src="img/icons/Facebook.png" width="35px" class="footer_social_img"></a>&nbsp;&nbsp;
 
         <!-- Google Plus --><a href="https://plus.google.com/share?url=%23" target="_blank"><img
                     src="img/icons/GooglePlus.png" width="35px" class="footer_social_img"></a>&nbsp;&nbsp;

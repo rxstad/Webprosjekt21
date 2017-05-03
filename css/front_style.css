@@ -283,8 +283,9 @@ input[type=submit] {
     padding: 5px;
 }
 
-.imgitem_main {
-
+.hide_button {
+    background: transparent;
+    border: 0;
 }
 
 .imgdesc_main {
