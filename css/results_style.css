@@ -51,6 +51,7 @@
     -ms-filter: blur(5px);
     filter: blur(5px);
     z-index: 2;
+    display: none;
 }
 
 /* === UNDER HEADER === */
@@ -141,9 +142,10 @@
 
 .mdl-card__title {
     position: absolute;
-    margin-top: -90px;
+    margin-top: -80px;
     background: #fff;
     padding-right: 10px;
+    font-size: 11pt;
 }
 
 .mdl-card__title a, a:visited, a:link {

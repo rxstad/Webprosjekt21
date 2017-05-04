@@ -20,8 +20,8 @@ require("header_menu.php");
 <div id="header">
     <?php require("map.php"); ?>
 
-    <br><br><br><br><br><br><br><br><br><br>
-    <center><h3>Kart</h3></center>
+    <br><br><br><br><br><br><br><br><br>
+    <center><h3>Kart mangler &#x1F937;</h3></center>
 </div>
 <div id="wrapper">
 
@@ -112,4 +112,8 @@ require("header_menu.php");
 
 <script type="text/javascript" src="mapAPI.js"></script>
 
+
 </body onload="initialize()">
+<?php
+require("footer.php");
+?>

@@ -32,5 +32,6 @@ require("search.php")
 <?php
 require("footer.php");
 ?>
+
 </body>
 </html>
