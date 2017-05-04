@@ -44,15 +44,16 @@ require("header_menu.php");
 
         <div class="read_more" tabindex="0">
 
-            <?php
+                <?php
             $myfile = fopen( $object['beskrivelse'] , "r") or die("Unable to open file!");
-            echo fread($myfile,filesize("webdictionary.txt"));
+            $document = fread($myfile,filesize($object['beskrivelse']));
+            echo '<PRE>' . $document . '</PRE>';
             fclose($myfile);
-            echo $myfile;
+
             ?>
 
 
-            <?= $object['beskrivelse'] ?>
+<!--           <?//= $object['beskrivelse'] ?> -->
 
         </div>
 
