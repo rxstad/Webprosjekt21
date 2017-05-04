@@ -43,6 +43,15 @@ require("header_menu.php");
 
 
         <div class="read_more" tabindex="0">
+
+            <?php
+            $myfile = fopen( $object['beskrivelse'] , "r") or die("Unable to open file!");
+            echo fread($myfile,filesize("webdictionary.txt"));
+            fclose($myfile);
+            echo $myfile;
+            ?>
+
+
             <?= $object['beskrivelse'] ?>
 
         </div>
