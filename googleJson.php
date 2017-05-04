@@ -37,4 +37,30 @@ $maps_array = json_decode($maps_content, true);
         }
     }
 
+    function getLocation() {
+        /*henter adresse fra googles database*/
+        if (typeof jSonReq.result !== "undefined") {
+            console.log("kjører getLocation: = ", jSonReq.result.geometry.location);
+            return jSonReq.result.geometry.location;
+        } else {
+            return fjerdingen;
+        }
+    }
+
+    function getMarkerTitle() {
+        /*henter navn fra googles database*/
+        if (typeof jSonReq.result !== "undefined") {
+            return jSonReq.result.name;
+        }
+    }
+
+    function getUrl() {
+        /*henter navn fra googles database*/
+        if (typeof jSonReq.result !== "undefined") {
+            console.log(jSonReq.result.website);
+            return jSonReq.result.website;
+
+        }
+    }
+
 </script>

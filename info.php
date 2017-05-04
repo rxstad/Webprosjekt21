@@ -26,7 +26,15 @@ require("header_menu.php");
 <div id="wrapper">
 
     <div id="main">
-        <div class="place_title"><?= $object['navn'] ?></div>
+        <div class="place_title">
+            <script>
+            //location = getUrl();
+            document.write('<a href="' + getUrl() + '"><?= $object['navn'];?></a>');
+            </script>
+
+
+
+            </div>
 
 
         <div class="read_more" tabindex="0">
