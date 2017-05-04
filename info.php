@@ -28,8 +28,13 @@ require("header_menu.php");
     <div id="main">
         <div class="place_title">
             <script>
-            //location = getUrl();
-            document.write('<a href="' + getUrl() + '"><?= $object['navn'];?></a>');
+
+                if(getUrl() !== "undefined") {
+                    document.write('<a href="' + getUrl() + '"><?= $object['navn']?></a>');
+                }
+                else {
+                    document.write("<?= $object['navn']?>");
+                }
             </script>
 
 
