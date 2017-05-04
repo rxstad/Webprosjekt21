@@ -113,6 +113,13 @@
     transition: 0.5s ease;
 }
 
+#beskrivelse {
+    font-family: helvetica, sans-serif;;
+    font-size: 120%;
+    white-space: pre;
+
+}
+
 #sidebar {
     float: left;
     width: 200px;

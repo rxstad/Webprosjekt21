@@ -46,11 +46,11 @@ require("header_menu.php");
 
                 <?php
                 if(file_exists($object['beskrivelse'])){
-                    echo '<pre>'.file_get_contents($object['beskrivelse']).'</pre>';
-                
+                    $beskrivelse = htmlentities($object['beskrivelse'], ENT_QUOTES, 'UTF-8');
+                    echo '<p id="beskrivelse">'.file_get_contents($beskrivelse).'</p>';
                 }
                 else{
-                    echo "Ingen beskrivelse for denne siden";
+                    echo '<p id="beskrivelse"> Ingen beskrivelse for denne siden </p>';
                 }
             ?>
 
