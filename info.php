@@ -45,11 +45,13 @@ require("header_menu.php");
         <div class="read_more" tabindex="0">
 
                 <?php
-            $myfile = fopen( $object['beskrivelse'] , "r") or die("Unable to open file!");
-            $document = fread($myfile,filesize($object['beskrivelse']));
-            echo '<PRE>' . $document . '</PRE>';
-            fclose($myfile);
-
+                if(file_exists($object['beskrivelse'])){
+                    echo '<pre>'.file_get_contents($object['beskrivelse']).'</pre>';
+                
+                }
+                else{
+                    echo "Ingen beskrivelse for denne siden";
+                }
             ?>
 
 
