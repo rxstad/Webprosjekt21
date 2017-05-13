@@ -10,6 +10,7 @@ header('Content-Type: text/html; charset=UTF-8');
 
 
     <?php
+    echo "id: ".$event['sted_id'];
     $object = $event;
     require("getImages.php");
     require("googleJson.php");

@@ -1,18 +1,22 @@
 <?php
 $events = [];
+$temp = [];
 require("config.php");
 //var_dump($_POST);
 if (isset($_POST['submit'])) {
     if (isset($_GET['go'])) {
-        $search = htmlentities($_POST['search'], ENT_QUOTES, 'UTF-8');
-        //print_r("post = ".$search);
+        $search = $_POST['search'];
+        //$inc = htmlentities($_POST['search'], ENT_QUOTES, 'UTF-8');
+        //$search = utf8_decode($inc);
 
-        $sql = ("SELECT * FROM steder
+        $sql = ("SELECT DISTINCT * FROM steder
         LEFT JOIN info ON steder.sted_id = info.sted_id
-        WHERE upper(kategori) LIKE upper ('%$search%')
-        OR UPPER (navn) LIKE upper ('%$search%') 
-        OR upper (beskrivelse) LIKE upper ('%$search%')
-        ")
+        LEFT JOIN kategori_kopling ON steder.sted_id = kategori_kopling.sted_id
+        LEFT JOIN søkeord ON kategori_kopling.kategori = søkeord.kategori
+        WHERE upper(søkeord) LIKE upper ('%$search%')
+        OR UPPER (navn) LIKE upper ('%$search%')
+        GROUP BY steder.sted_id")
+
         or die("could not search");
 
         $res = $connection->query($sql);
@@ -30,4 +34,5 @@ if (isset($_POST['submit'])) {
 
         }
     }
+
 }
