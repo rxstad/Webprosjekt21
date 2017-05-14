@@ -16,7 +16,6 @@ require("header_menu.php");
 </a>
 
 <body>
-<div id="topbar"></div>
 <div id="header">
     <?php require("map.php"); ?>
 
@@ -25,7 +24,12 @@ require("header_menu.php");
 </div>
 <div id="wrapper">
 
-    <div id="main">
+    <div id="top_info">
+
+        <div class="top_thumbnail">
+            <center><img class="thumbnail_radius" src="<? echo $object['img'] . "/" . $imgList[0]; ?>" width="200px" height="200px"></center>
+        </div>
+
         <div class="place_title">
             <script>
 
@@ -41,47 +45,16 @@ require("header_menu.php");
 
             </div>
 
-
-        <div class="read_more" tabindex="0">
-
-                <?php
-                if(file_exists($object['beskrivelse'])){
-                    $beskrivelse = htmlentities($object['beskrivelse'], ENT_QUOTES, 'UTF-8');
-                    echo '<p id="beskrivelse">'.file_get_contents($beskrivelse).'</p>';
-                }
-                else{
-                    echo '<p id="beskrivelse"> Ingen beskrivelse for denne siden </p>';
-                }
-            ?>
-
-
-<!--           <?//= $object['beskrivelse'] ?> -->
-
-        </div>
-
-        <div class="place_photos">
-            <center><h2>
-                    <?php
-                    for ($i = 1; $i < sizeof($imgList); $i++) {
-                        echo '<img src="' . $object['img'] . "/" . $imgList[$i] . '" width="240px" height="240px">';
-                    }
-                    ?>
-                </h2></center>
-        </div>
-
-    </div>
-    <div id="sidebar">
-
-        <div class="side_thumbnail">
-            <img src="<? echo $object['img'] . "/" . $imgList[0]; ?>" width="240px" height="240px">
-        </div>
+            <div class="top_address">
+                <script> /*henter adresse fra googles database*/
+                    getAdress();
+                </script>
+            </div>
 
         <img src="img/icons/Phone.png" width="20px"> <?= $object['tlf'] ?>
         <hr>
 
-        <script> /*henter adresse fra googles database*/
-            getAdress();
-        </script>
+        
 
         <hr>
         <h4>Åpningstider</h4>
@@ -105,6 +78,37 @@ require("header_menu.php");
                 ?>
             </center>
         </div>
+    </div>
+
+    <div id="main">
+
+        <div class="read_more" tabindex="0">
+
+                <?php
+                if(file_exists($object['beskrivelse'])){
+                    $beskrivelse = htmlentities($object['beskrivelse'], ENT_QUOTES, 'UTF-8');
+                    echo '<p id="beskrivelse">'.file_get_contents($beskrivelse).'</p>';
+                }
+                else{
+                    echo '<p id="beskrivelse"> Ingen beskrivelse for denne siden </p>';
+                }
+            ?>
+
+
+        <!--           <?//= $object['beskrivelse'] ?> -->
+
+        </div>
+
+        <div class="place_photos">
+            <center><h2>
+                    <?php
+                    for ($i = 1; $i < sizeof($imgList); $i++) {
+                        echo '<img class="place_photos_size" src="' . $object['img'] . "/" . $imgList[$i] . '">';
+                    }
+                    ?>
+                </h2></center>
+        </div>
+
     </div>
 
 </div>

@@ -7,6 +7,53 @@
     position: relative;
 }
 
+#top_info {
+    min-width: 400px;
+    max-width: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: transparent;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+}
+
+#top_info hr {
+    width: 240px;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin-left: -20px;
+}
+
+.top_thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    margin-top: -70px;
+}
+
+.thumbnail_radius {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
+}
+
+.top_address {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #444;
+}
+
+.side_social {
+    margin-top: 20px;
+}
+
 #go_back {
     position: absolute;
     margin-top: 100px;
@@ -48,10 +95,11 @@
 }
 
 #main {
-    float: right;
     min-width: 400px;
     max-width: 800px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
 }
 
@@ -60,21 +108,36 @@
     font-weight: 500;
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-align: center;
 }
+.place_title a, a:visited, a:link {color: #000; text-decoration: none;}
 
 .place_photos {
     background: #ddd;
     min-height: 400px;
-    max-width: 100%;
+    max-width: 800;
     padding: 20px;
     margin-bottom: 20px;
     margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.place_photos_size {
+    max-width: 550px;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .read_more {
     max-height: 100px;
     transition: max-height 0.5s ease-out;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .read_more:focus {
@@ -98,32 +161,4 @@
     font-size: 120%;
     white-space: pre;
 
-}
-
-#sidebar {
-    float: left;
-    width: 200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: #efefef;
-    padding-bottom: 20px;
-    margin-top: -110px;
-    z-index: -1;
-}
-
-#sidebar hr {
-    width: 240px;
-    border: 0;
-    height: 1px;
-    background: #ddd;
-    margin-left: -20px;
-}
-
-.side_thumbnail {
-    margin-left: -20px;
-    margin-bottom: 20px;
-}
-
-.side_social {
-    margin-top: 20px;
 }
