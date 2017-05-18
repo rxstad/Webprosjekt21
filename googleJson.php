@@ -50,8 +50,8 @@ $maps_array = json_decode($maps_content, true);
     }
 
     function getUrl() {
-        /*henter navn fra googles database*/
-        if (typeof jSonReq.result !== "undefined") {
+        /*henter url fra googles database*/
+        if (typeof jSonReq.result.website !== "undefined") {
             return jSonReq.result.website;
         }else{
             return "undefined";
