@@ -45,7 +45,7 @@ http://shouldiprefix.com/#gradients
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30vh;
+    margin-top: 25vh;
     position: relative;
     z-index: 4;
     padding: 10px;
@@ -148,20 +148,18 @@ http://shouldiprefix.com/#gradients
 
 input[type=text] {
     width: 190px;
-    -webkit-transition: width 0.4s ease-in-out;
-    color: #000;
-    font-size: 17pt;
+    color: #fff;
+    font-size: 19pt;
     font-weight: 400;
     text-align: center;
     transition: width 0.5s ease-in-out;
     font-family: 'Montserrat', sans-serif;
-    background: #fff;
+    background: transparent;
     padding-bottom: 5px;
-    opacity: 0.6;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
-    border: 0;
+    border: 2px solid #fff;
     padding-right: 5px;
 }
 
@@ -180,21 +178,21 @@ input[type=text]::-webkit-slider-thumb {
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #888;
+    color: #efefef;
 }
 
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #888;
+    color: #efefef;
     opacity: 1;
 }
 
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #888;
+    color: #efefef;
     opacity: 1;
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #888;
+    color: #efefef;
 }
 
 input[type=submit] {
@@ -280,7 +278,13 @@ input[type=submit] {
     flex-shrink: 0;
     height: auto;
     width: 220px;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+    margin-top: 25px;
+    -webkit-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
 }
 
 .hide_button {
@@ -290,13 +294,14 @@ input[type=submit] {
 
 .imgdesc_main {
     position: absolute;
-    margin-top: -60px;
+    margin-top: -80px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 25pt;
-    color: #fff;
-    text-shadow: 2px 1px 8px #444;
-    margin-left: 15px;
+    color: #000;
+    margin-left: 5px;
+    background: #fff;
+    padding: 10px;
 }
 
 #main_info {
@@ -304,7 +309,7 @@ input[type=submit] {
     height: 450px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: url(https://www.transparenttextures.com/patterns/clean-gray-paper.png) #A4C281;
+    background: url(../img/backgrounds/main_down.png);
     overflow: hidden;
 }
 

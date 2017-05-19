@@ -11,6 +11,7 @@ require("header_menu.php");
 
     <div id="header_search_outer">
         <div class="header_search_inner">
+        	<center><img src="img/icons/index_header_search.png" width="80px"></center>
             <h2>Jeg vil</h2>
             <form method="post" action="results.php?go" id="searchform">
                 <input type="text" name="search" placeholder="Søk + enter" onfocus="this.placeholder = ''"
@@ -27,13 +28,14 @@ require("header_menu.php");
             </div>
         </div>
         <video loop muted autoplay loop class="fullscreen_bg_video">
-            <source src="img/backgrounds/video_bg6.mp4" type="video/mp4">
+            <source src="img/backgrounds/video_bg7.mp4" type="video/mp4">
         </video>
     </div>
 
 </div>
 <div id="wrapper">
     <div id="main">
+    <br>
         <center><h1>Vet du ikke hva du vil?</h1></center>
         <br>
         <div id="mainflex">
@@ -100,7 +102,7 @@ require("header_menu.php");
         </div>
 
 
-    </div>
+    </div><br>
 
     <div id="main_info">
         <div class="main_info_wrap">
@@ -127,6 +129,8 @@ require("header_menu.php");
 </div>
 
 <script type="text/javascript" src="js/arrow.js"></script>
+
+
 <?php
 require("footer.php");
 ?>

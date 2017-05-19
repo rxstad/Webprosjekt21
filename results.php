@@ -28,7 +28,6 @@ require("search.php")
 
     </div>
 </div>
-
 <?php
 require("footer.php");
 ?>
