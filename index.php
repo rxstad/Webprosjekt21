@@ -14,8 +14,8 @@ require("header_menu.php");
         	<center><img src="img/icons/index_header_search.png" width="80px"></center>
             <h2>Jeg vil</h2>
             <form method="post" action="results.php?go" id="searchform">
-                <input type="text" name="search" placeholder="Søk + enter" onfocus="this.placeholder = ''"
-                       onblur="this.placeholder = 'Søk + enter'">
+                <input type="text" name="search" placeholder="skriv her + enter" onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'skriv her + enter'">
                 <input type="submit" name="submit" value="search">
             </form>
         </div>
@@ -115,7 +115,7 @@ require("header_menu.php");
                 Phasellus nec leo sit amet dui aliquet tempus.<br><br>
 
                 <a href="about.php">
-                    <button>Les mer om oss</button>
+                    Les mer om oss
                 </a>
             </div>
 

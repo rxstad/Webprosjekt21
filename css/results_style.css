@@ -1,14 +1,12 @@
 /* === Header === */
 #header {
-    background: -moz-linear-gradient(top, #6DAFC7 0%, #AFC672 100%);
-    background: -webkit-linear-gradient(top, #6DAFC7 0%, #AFC672 100%); /* WebKit, Blink, Edge */
-    background: -o-linear-gradient(top, #6DAFC7 0%, #AFC672 100%);
-    background: -ms-linear-gradient(top, #6DAFC7 0%, #AFC672 100%); /* Internet Explorer 10-11 */
-    background: linear-gradient(to bottom, #6DAFC7 0%, #AFC672 100%);
+    background: url(../img/backgrounds/about_header.jpg) no-repeat center center;
+    background-size: cover;
     width: 100%;
     height: 300px;
     position: relative;
     overflow: hidden;
+    opacity: 0.8;
 }
 
 #header_search_outer {
@@ -30,7 +28,7 @@
     z-index: 4;
     padding: 10px;
     text-align: center;
-    color: #fff;
+    color: #000;
     font-size: calc(13px + 1.9vw); /* Juster tekst størrelsen responsive */
     overflow: hidden;
 }
@@ -51,7 +49,6 @@
     -ms-filter: blur(5px);
     filter: blur(5px);
     z-index: 2;
-    display: none;
 }
 
 /* === UNDER HEADER === */
@@ -66,7 +63,7 @@
     background: #fff;
     max-width: 1100px;
     min-width: 400px;
-    min-height: 600px;
+    min-height: 200px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -168,4 +165,58 @@
 
 .mdl-card__supporting-text {
     font-size: 7pt;
+}
+
+/* IKKE FUNNET - SØK IGJEN OMRÅDET ############# */
+
+#not_found {
+    min-width: 300px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 190px;
+    color: #222;
+    font-size: 15pt;
+    font-weight: 400;
+    text-align: center;
+    transition: width 0.5s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border: 3px solid #6DAFC7;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-left: auto;
+}
+input[type=text]:focus {
+    width: 355px;
+    outline: 0;
+}
+input[type=text]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #444;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #444;
+    opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #444;
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #444;
+}
+input[type=submit] {
+    display: none;
 }

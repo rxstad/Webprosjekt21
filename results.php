@@ -26,6 +26,14 @@ require("search.php")
 
         </div>
 
+        <div id="not_found">
+        <h2>Fant du ikke det du lette etter?</h2>
+        <center><form method="post" action="results.php?go" id="searchform">
+                <input type="text" name="search" placeholder="Søk + enter" onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'Søk + enter'">
+                <input type="submit" name="submit" value="search">
+            </form></center>
+        </div>
     </div>
 </div>
 <?php
