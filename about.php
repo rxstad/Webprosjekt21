@@ -11,7 +11,7 @@ require("header_menu.php");
 
     </div>
 </div>
-<center><img src="img/desk_about.png" width="900px" class="header_img"></center>
+<center><img class="header_img" src="img/desk_about.png" width="900px"></center>
 
 <div id="wrapper">
     <div id="main">
@@ -35,7 +35,25 @@ require("header_menu.php");
 
 
         <div class="main_title_left"><h1>Teamet</h1></div>
-        
+        <div class="team_flex">
+    		
+    		<div class="team_flex_item">
+    			<img src="img/temp/profilepic.jpg" width="100%">
+		        <h2 class="name_up">Benjamin</h2>
+	    	</div>
+	    	<div class="team_flex_item">
+	    		<img src="img/temp/profilepic.jpg" width="100%">
+	        	<h2 class="name_up">Glenn</h2>
+	    	</div>
+	    	<div class="team_flex_item">
+	    		<img src="img/temp/profilepic.jpg" width="100%">
+	        	<h2 class="name_up">Simen</h2>
+	    	</div>
+	    	<div class="team_flex_item">
+	    		<img src="img/temp/profilepic.jpg" width="100%">
+	        	<h2 class="name_up">Tomas</h2>
+	    	</div>
+	    </div>
 
 
         <div class="main_title_right"><h1>Annet</h1></div>
