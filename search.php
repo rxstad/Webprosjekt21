@@ -6,7 +6,8 @@ if (isset($_POST['submit'])) {
     if (isset($_GET['go'])) {
         $search = $_POST['search'];
         $search = htmlspecialchars($_POST['search'], ENT_QUOTES, "UTF-8");
-
+        $search = addslashes($search);
+        var_dump($search);
         $sql = ("SELECT DISTINCT * FROM steder
         LEFT JOIN info ON steder.sted_id = info.sted_id
         LEFT JOIN kategori_kopling ON steder.sted_id = kategori_kopling.sted_id

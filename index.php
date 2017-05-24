@@ -133,6 +133,7 @@ require("header_menu.php");
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.js"></script>
 <link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+
 <script type="text/javascript">
 //auto search function
     var duce = <?php require("Autocomplete.php") ?>;
