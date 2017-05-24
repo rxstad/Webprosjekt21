@@ -6,54 +6,49 @@
  * Date: 06.05.2017
  * Time: 19.21
  */
-require ("config.php");
+require_once ("config.php");
 
-$searchTerm=$_REQUEST["term"];
-$return_arr;
+//$search="";
+
+$search = htmlspecialchars("", ENT_QUOTES, "UTF-8");
+
+
 
 $json=array();
+$grr =array();
 
 
-    $sql = ("SELECT DISTINCT * FROM steder
+$sql = ("SELECT DISTINCT * FROM steder
         LEFT JOIN info ON steder.sted_id = info.sted_id
         LEFT JOIN kategori_kopling ON steder.sted_id = kategori_kopling.sted_id
         LEFT JOIN søkeord ON kategori_kopling.kategori = søkeord.kategori
-        WHERE upper(søkeord) LIKE upper ('%$searchTerm%')
-        OR UPPER (navn) LIKE upper ('%$searchTerm%')
-        GROUP BY steder.sted_id
-        ORDER BY navn ASC ");
+        WHERE upper(søkeord) LIKE upper ('%$search%')
+        OR UPPER (navn) LIKE upper ('%$search%')
+        GROUP BY steder.sted_id")
+or die("could not search");
 
 
-    try {
-        $conn = new PDO("mysql:host={$host};dbname={$name};port={$port};", $username, $password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $stmt = $conn->prepare($sql);
+try {
+        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $stmt = $connection->prepare($sql);
         $stmt->execute();
 
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            array_push($json, $row['kategori']);
+
+            array_push($json, $row['navn']);
+            $pieces = explode(", ", $row['søkeord']);
+            foreach ($pieces as $piece) {
+                array_push($json, $piece);
+            }
         }
 
-        echo json_encode($json);
-        var_dump("fitte");
     } catch(PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
     }
 
+$grr = array_values(array_unique($json, SORT_REGULAR));
 
-require_once ('config.php');
-
-$q=$_REQUEST["q"];
-$sql="SELECT `fname` FROM `Property` WHERE fname LIKE '%$q%'";
-$result = mysql_query($sql);
-
-$json=array();
-
-while($row = mysql_fetch_array($result)) {
-    array_push($json, $row['fname']);
-}
-
-echo json_encode($json);
+echo json_encode($grr);
 
 
 

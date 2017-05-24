@@ -13,6 +13,7 @@ header('Content-Type: text/html; charset=UTF-8');
     $object = $event;
     require("getImages.php");
     require("googleJson.php");
+
     ?>
     <!-- Start Event Card -->
     <div class="mdl-card mdl-shadow--2dp">

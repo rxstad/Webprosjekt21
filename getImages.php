@@ -17,6 +17,7 @@ if ($handle = opendir("" . $object['img'])) {
 
     }
     closedir($handle);
+    sort($imgList);
 }
 
 ?>

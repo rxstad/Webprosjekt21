@@ -15,13 +15,13 @@ require ("search.php");
         <div class="header_search_inner">
             <h2>Jeg vil</h2>
             <form method="post" action="results.php?go" id="searchform">
-                <input type="text" name="search" value="" class="auto" placeholder="Søk + enter" onfocus="this.placeholder = ''"
+                <input type="text" name="search" value="" id="hint" class="auto" placeholder="Søk + enter" onfocus="this.placeholder = ''"
                        onblur="this.placeholder = 'Søk + enter'">
                 <input type="submit" name="submit" value="search">
             </form>
 
             <form class="sansserif" action="view.php" method="post">
-                Name: <input type="text" id="hint" name="hint" />
+                Name: <input type="text" name="hint" />
                 <input type="submit" name="submit" value="View">
             </form>
 
@@ -56,7 +56,7 @@ require ("search.php");
             <div class="mainflex_item">
 
                 <form method="post" action="results.php?go" id="searchform">
-                    <input type="text" value="mat" name="search" hidden="true">
+                    <input type="text" value="mat" id="hint" name="search" hidden="true">
                     <button type="submit" name="submit" value="mat" class="hide_button">
                         <img src="img/shops/mat1.jpg" class="imgitem_main" width="100%"></button>
                 </form>
@@ -143,28 +143,34 @@ require ("search.php");
 </div>
 
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" />
 <script type="text/javascript">
+    $(document).ready(function(){
 
-    $(function() {
 
-        $("#topic_title").autocomplete({
-            source: "Autocomplete.php",
-            minLength: 2,
-            select: function(event, ui) {
-                var url = ui.item.id;
-                if(url != '#') {
-                    location.href = '/blog/' + url;
+        $("#hint").autocomplete({
+            console.log("HEST"  );
+            source: function (request, response) {
+                $.ajax({
+                    type: "post",
+                    url: "Autocomplete.php",
+                    dataType: "jsonp",
+                    data: {
+                        term: request.term
+                    },
+                    sucsess: function (data){
+                        response(data);
+
                 }
-            },
+            })
 
-            html: true, // optional (jquery.ui.autocomplete.html.js required)
-
-            // optional (if other layers overlap autocomplete list)
-            open: function(event, ui) {
-                $(".ui-autocomplete").css("z-index", 1000);
             }
-        });
 
+            /*source:'Autocomplete.php',
+            minLength:1*/
+        });
     });
 </script>
 <script type="text/javascript" src="js/arrow.js"></script>
