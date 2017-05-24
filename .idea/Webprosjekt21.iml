@@ -45,5 +45,7 @@
     </orderEntry>
     <orderEntry type="library" name="jquery-1.9.1" level="application" />
     <orderEntry type="library" name="jquery-ui" level="application" />
+    <orderEntry type="library" name="require" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
