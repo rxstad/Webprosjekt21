@@ -31,7 +31,7 @@ $json=array();
         $stmt->execute();
 
         while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            array_push($json, $row);
+            array_push($json, $row['kategori']);
         }
 
         echo json_encode($json);
@@ -39,6 +39,21 @@ $json=array();
     } catch(PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
     }
+
+
+require_once ('config.php');
+
+$q=$_REQUEST["q"];
+$sql="SELECT `fname` FROM `Property` WHERE fname LIKE '%$q%'";
+$result = mysql_query($sql);
+
+$json=array();
+
+while($row = mysql_fetch_array($result)) {
+    array_push($json, $row['fname']);
+}
+
+echo json_encode($json);
 
 
 

@@ -143,27 +143,30 @@ require ("search.php");
 </div>
 
 
-<script>
-    function showHint(str) {
-        if (str.length == 0) {
-            document.getElementById("search").innerHTML = "";
-            return;
-        } else {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("search").innerHTML = this.responseText;
+<script type="text/javascript">
+
+    $(function() {
+
+        $("#topic_title").autocomplete({
+            source: "Autocomplete.php",
+            minLength: 2,
+            select: function(event, ui) {
+                var url = ui.item.id;
+                if(url != '#') {
+                    location.href = '/blog/' + url;
                 }
-            };
-            xmlhttp.open("GET", "Autocomplete.php?q=" + str, true);
-            xmlhttp.send();
-        }
-    }
+            },
+
+            html: true, // optional (jquery.ui.autocomplete.html.js required)
+
+            // optional (if other layers overlap autocomplete list)
+            open: function(event, ui) {
+                $(".ui-autocomplete").css("z-index", 1000);
+            }
+        });
+
+    });
 </script>
-
-
-
-
 <script type="text/javascript" src="js/arrow.js"></script>
 
 <?php

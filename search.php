@@ -2,12 +2,10 @@
 $events = [];
 $temp = [];
 require("config.php");
-//var_dump($_POST);
 if (isset($_POST['submit'])) {
     if (isset($_GET['go'])) {
         $search = $_POST['search'];
-        //$inc = htmlentities($_POST['search'], ENT_QUOTES, 'UTF-8');
-        //$search = utf8_decode($inc);
+        $search = htmlspecialchars($_POST['search'], ENT_QUOTES, "UTF-8");
 
         $sql = ("SELECT DISTINCT * FROM steder
         LEFT JOIN info ON steder.sted_id = info.sted_id
@@ -31,8 +29,6 @@ if (isset($_POST['submit'])) {
             while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                 $events[] = $row;
             }
-
         }
     }
-
 }
