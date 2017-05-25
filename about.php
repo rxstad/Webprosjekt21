@@ -44,7 +44,7 @@ require("header_menu.php");
 		        <h2 class="name_up">Benjamin</h2>
 	    	</div>
 	    	<div class="team_flex_item">
-	    		<img src="img/temp/lol.jpg" width="100%">
+	    		<img src="img/temp/profilepic.jpg" width="100%">
 	        	<h2 class="name_up">Glenn</h2>
 	    	</div>
 	    	<div class="team_flex_item">
