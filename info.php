@@ -85,8 +85,9 @@ require("header_menu.php");
         <div class="read_more" tabindex="0">
 
                 <?php
+
                 if(file_exists($object['beskrivelse'])){
-                    $beskrivelse = htmlentities($object['beskrivelse'], ENT_QUOTES, 'UTF-8');
+                    $beskrivelse = htmlspecialchars($object['beskrivelse'], ENT_QUOTES, 'UTF-8');
                     echo '<p id="beskrivelse">'.file_get_contents($beskrivelse).'</p>';
                 }
                 else{

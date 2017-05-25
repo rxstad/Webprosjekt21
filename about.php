@@ -19,12 +19,14 @@ require("header_menu.php");
     	<div class="about_flex">
     		
     		<div class="about_flex_item">
-		        <font style="font-size: 33pt; font-weight: 700; color: #6DAFC7;">L</font>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		        tempor. Incididunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam,
-		        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		        cillum dolore eu fugiat nulla pariatur. <br><br><b>Lorem Borem</b><br>Excepteur sint occaecat cupidatat non
-		        proident, sunt in culpa qui officia deserunt mollit anim id est laborum in voluptate velit esse.<br><br>
+		        <font style="font-size: 23pt; font-weight: 700; color: #6DAFC7;">
+                    W</font>esterLife består av fire første års studenter på<br>
+                Westerdals Oslo ACT på teknologi avdelingen.<br> Vi har laget en søkemotor for deg som student på
+                Westerdals campusene hvor du kan søke etter steder som vi har lagt under kategorier i søkefunksjonen.<br><br>
+                Dette er foreløpig en simpel side under utvikling,
+                men vi har planer om å implementere en side hvor man også kan legge til arrangementer om hva som skjer rundt campus.<br><br>
+                Denne siden er et gruppeprosjekt som vi jobber med i løpet av andre semester på første året, og av den grunn kommer mest sansynligvis
+                ikke til å bli oppdatert i fremtiden.
 	    	</div>
 	    	<div class="about_flex_item">
 	        	<img src="img/about_WL.jpg" width="100%">
@@ -42,7 +44,7 @@ require("header_menu.php");
 		        <h2 class="name_up">Benjamin</h2>
 	    	</div>
 	    	<div class="team_flex_item">
-	    		<img src="img/temp/profilepic.jpg" width="100%">
+	    		<img src="img/temp/lol.jpg" width="100%">
 	        	<h2 class="name_up">Glenn</h2>
 	    	</div>
 	    	<div class="team_flex_item">
