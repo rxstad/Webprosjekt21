@@ -153,6 +153,7 @@ http://shouldiprefix.com/#gradients
 
 input[type=text] {
     width: 350px;
+    border: 0;
     color: #fff;
     font-size: 20pt;
     font-weight: 400;
@@ -170,7 +171,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    width: 400px;
+    width: 380px;
     outline: 0;
     opacity: 0.9;
 }
