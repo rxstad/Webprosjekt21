@@ -58,4 +58,30 @@ $maps_array = json_decode($maps_content, true);
         }
     }
 
+    function getIsOpen() {
+        /*sjekker om stedet er åpent*/
+        if (typeof jSonReq.result.opening_hours !== "undefined") {
+            return jSonReq.result.opening_hours.open_now;
+        }else{
+            return "undefined";
+        }
+
+    }
+
+    function getOpeningTime() {
+        /*henter åpningstid*/
+        var a = new Date;
+        var day = (a.getDay() -1)%7;
+        var actualDay = jSonReq.result.opening_hours.weekday_text[(day)];
+        if (typeof jSonReq.result.opening_hours.weekday_text !== "undefined") {
+            return actualDay;
+        }else{
+            return "undefined";
+        }
+
+    }
+
+
+
+
 </script>
