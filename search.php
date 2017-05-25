@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
         $search = $_POST['search'];
         $search = htmlspecialchars($_POST['search'], ENT_QUOTES, "UTF-8");
         $search = addslashes($search);
-        var_dump($search);
+
         $sql = ("SELECT DISTINCT * FROM steder
         LEFT JOIN info ON steder.sted_id = info.sted_id
         LEFT JOIN kategori_kopling ON steder.sted_id = kategori_kopling.sted_id
@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
         $num_rows = $res->fetchColumn();
         $result;
         if ($num_rows == 0) {
-            $result = 'there was no search results for "' . $search . '"';
+            $result = 'fant ingen resultater for "' . $search . '"';
         } else {
             $result = 'Resultater for "' . $search . '"';
             $statement = $connection->prepare($sql);
