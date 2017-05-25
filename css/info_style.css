@@ -116,7 +116,7 @@
 .time_open_close {
     padding: ;
     width: 200px;
-    height: 50px;
+    height: auto;
     background: #aec671;
     margin-left: auto;
     margin-right: auto;
