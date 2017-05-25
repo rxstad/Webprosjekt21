@@ -51,6 +51,23 @@ require("header_menu.php");
                 </script>
             </div>
 
+            <div class="time_open_close">
+
+            <h3>Åpent nå</h3>
+               <!-- <script>
+                    if (7 <= currentTime && currentTime < 20) {
+                    if (document.body) {
+                       document.time_open_close.background = #AEC671;
+                         }
+                     }
+                    else {
+                        if (document.body) {
+                            document.time_open_close.background = #AD4949;
+                        }
+                    }
+
+                </script> -->
+            </div>
         <img src="img/icons/Phone.png" width="20px"> <?= $object['tlf'] ?>
         <hr>
 

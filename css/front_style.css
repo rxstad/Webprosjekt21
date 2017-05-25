@@ -5,7 +5,7 @@ display:flex; display: inline-flex, align-content, align-items, align-self, just
 http://caniuse.com/#home
 http://shouldiprefix.com/#gradients
 
-#6DAFC7 a4cddc
+#6DAFC7 #a4cddc
  */
 
 /* =============== Header =============== */
@@ -352,5 +352,20 @@ input[type=submit] {
 
 .ui-autocomplete {
     height: 150px;
-    overflow: hidden;
+    overflow-y: scroll;
+    background: #fff;
+    opacity: 0.5;
+    border: 0;
+}
+.ui-menu-item {
+    background: #fff;
+    border: 0;
+    outline: 0;
+}
+.ui-menu-item a:hover {
+    border: 0;
+    outline: 0;
+}
+.ui-menu-item-wrapper {
+    outline: 0;
 }

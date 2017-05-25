@@ -157,17 +157,5 @@ require("header_menu.php");
 	require("footer.php");
 	?>
 
-	<script>
-(function($) {
-    
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
-
-})(jQuery);
-	</script>
+	<script src="js/accordion.js"></script>
 </body>
