@@ -46,8 +46,13 @@ require("search.php");
     var duce = <?php require("Autocomplete.php") ?>;
 
     $(document).ready(function () {
-        $("#search").autocomplete({source : duce});
+        $("#search").autocomplete({
+            source : duce,
+            maxShowItems: 5
+        });
     });
+
+
 
 
 </script>

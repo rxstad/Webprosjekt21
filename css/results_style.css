@@ -220,3 +220,8 @@ input[type=text]::-webkit-slider-thumb {
 input[type=submit] {
     display: none;
 }
+
+.ui-autocomplete {
+    height: 150px;
+    overflow: hidden;
+}

@@ -349,3 +349,8 @@ input[type=submit] {
     outline: 0;
     cursor: pointer;
 }
+
+.ui-autocomplete {
+    height: 150px;
+    overflow: hidden;
+}
