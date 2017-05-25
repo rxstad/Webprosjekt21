@@ -109,10 +109,7 @@ require("header_menu.php");
 
             <div style="float:left; width: 45%; margin-left: 5%; margin-top: 80px">
                 <h1>WesterLife</h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere diam nec magna ultrices luctus.
-                Nunc sed purus eu quam aliquam laoreet. Donec laoreet justo eu varius aliquet. <br><br>Praesent
-                tincidunt neque id mauris rutrum venenatis. Aliquam tincidunt felis sem, quis auctor neque consequat in.
-                Phasellus nec leo sit amet dui aliquet tempus.<br><br>
+                WesterLife er en interaktiv løsning som er rettet mot studenter og ansatte på westerdals hvor de kan søke opp relevante aktiviteter og steder på området rundt campusene.<br><br>
 
                 <a href="about.php">
                     Les mer om oss
