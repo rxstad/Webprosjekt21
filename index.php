@@ -12,7 +12,7 @@ require("header_menu.php");
     <div id="header_search_outer">
         <div class="header_search_inner">
         	<center><img src="img/icons/index_header_search.png" width="80px"></center>
-            <h2>Jeg vil</h2>
+            <h2>Søk</h2>
             <form method="post" action="results.php?go" id="searchform">
                 <input type="text" id="search" name="search" placeholder="skriv her + enter" onfocus="this.placeholder = ''"
                        onblur="this.placeholder = 'skriv her + enter'">
