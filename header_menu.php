@@ -5,7 +5,7 @@
             <a href="index.php">Hjem</a>
             <a href="arrangementer.php">Arrangementer</a>
             <a href="about.php">Om</a>
-            <a href="#">Hjelp</a>
+            <a href="help.php">Hjelp</a>
         </div>
     </div>
 </div>
