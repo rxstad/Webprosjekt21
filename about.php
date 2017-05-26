@@ -20,16 +20,11 @@ require("header_menu.php");
 
             <div class="about_flex_item">
                 <font style="font-size: 23pt; font-weight: 700; color: #6DAFC7;">
-                    W</font>esterLife består av fire første års studenter på<br>
-                Westerdals Oslo ACT på teknologi avdelingen.<br> Vi har laget en søkemotor for deg som student på
-                Westerdals campusene hvor du kan søke etter steder som vi har lagt under kategorier i
-                søkefunksjonen.<br><br>
-                Dette er foreløpig en simpel side under utvikling,
-                men vi har planer om å implementere en side hvor man også kan legge til arrangementer om hva som skjer
-                rundt campus.<br><br>
-                Denne siden er et gruppeprosjekt som vi jobber med i løpet av andre semester på første året, og av den
-                grunn kommer mest sansynligvis
-                ikke til å bli oppdatert i fremtiden.
+                    W</font>esterLife er en kreativ løsning for deg som Student eller Ansatt på Westerdals Oslo ACT. Vi tilbyr en søkemotor hvor du kan søke opp ulike aktiviteter og steder i området rundt de forskjellige campusene. Om det skulle være grilling i parken, en kulturell aften på Café Sara eller en hard treningsøkt på Hardals’s Gym, ikke bekymre deg, vi i WesterLife løsningen. <br><br>
+
+					Som bruker har du muligheten til å bruke ulike kategorier, samt finne arrangementer arrangert av- eller i sammenheng med Westerdals. Dette gjør at du kun er noen få tastetrykk unna å holde deg oppdatert på de siste hendelsene rundt skolen.<br><br>
+					For ytterligere spørsmål eller henvendelser, så kan du besøke <a href="help.php">Hjelp</a> siden, eller kontakte oss på westerlife@westerdals.no 
+            
             </div>
             <div class="about_flex_item">
                 <img src="img/about_WL.jpg" width="100%">
