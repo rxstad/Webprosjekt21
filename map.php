@@ -13,7 +13,7 @@ $lng = explode('lng: ', $coords)[1];
 
         var sted = getLocation();
         var fjerdingen = {lat: 59.9160539, lng: 10.7599923};
-        var brenneriveien = {lat: 59.9197317, lng: 10.7473439};
+        var brenneriveien = {lat: 59.9203547, lng: 10.7506041};
         var vulkan = {lat: 59.923429, lng: 10.751666};
         var map = new google.maps.Map(document.getElementById('header'), {
             zoom: 14,

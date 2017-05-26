@@ -53,8 +53,8 @@ require("header_menu.php");
             <div class="mainflex_item">
 
                 <form method="post" action="results.php?go" id="searchform">
-                    <input type="text" value="opera" name="search" hidden="true">
-                    <button type="submit" name="submit" value="opera" class="hide_button">
+                    <input type="text" value="Museum" name="search" hidden="true">
+                    <button type="submit" name="submit" value="Museum" class="hide_button">
                         <img src="img/shops/opera.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
@@ -138,6 +138,12 @@ require("header_menu.php");
     $(document).ready(function () {
         $("#search").autocomplete({source : duce});
     });
+
+$( ".selector" ).autocomplete({
+    select: function(event, ui) {
+        $('#search').submit();
+    }
+});
 
 
 </script>
