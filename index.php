@@ -28,7 +28,7 @@ require("header_menu.php");
             </div>
         </div>
         <video loop muted autoplay loop class="fullscreen_bg_video">
-            <source src="img/backgrounds/video_bg7.mp4" type="video/mp4">
+            <source src="img/backgrounds/video_bg_compressed.mp4" type="video/mp4">
         </video>
     </div>
 
