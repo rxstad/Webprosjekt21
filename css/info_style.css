@@ -41,7 +41,6 @@
     border-radius: 1px;
     border: 10px solid #fff;
     -webkit-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 21px -8px rgba(0,0,0,0.75);
 }
 
@@ -68,11 +67,14 @@
     margin-left: -140px;
 }
 .social {
-    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 .social {
-    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
 }
 
 /* =============== TILBAKEKNAPP =============== */
@@ -90,6 +92,7 @@
     height: 15px;
     overflow: hidden;
     -webkit-transition: width 0.1s;
+    -webkit-transition: width 1s;
     transition: width 1s;
     line-height: 28px;
     font-family: 'Montserrat';
@@ -101,6 +104,7 @@
     position: absolute;
     text-decoration: none;
     color: #000;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 
@@ -215,22 +219,30 @@ td {
 }
 .info_flex {
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     height: auto;
-    align-content: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
 }
 
 .info_flex_item {
-    flex-grow: 1;
-    flex-shrink: 1;
-    align-self: flex-start;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     height: auto;
     width: 330px;
     margin-top: 25px;
@@ -242,18 +254,26 @@ td {
     padding: 20px;
     margin-bottom: 20px;
     margin-top: 30px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     display: -ms-flexbox;
-    display: -webkit-flex;
+    display: -webkit-box;
     display: flex;
-    align-items: center;
-    align-content: stretch;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
 }
 .place_photos_size {
     width: 330px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 10px;
@@ -262,6 +282,7 @@ td {
 .read_more {
     max-height: 100px;
     width: 200px;
+    -webkit-transition: max-height 0.5s ease-out;
     transition: max-height 0.5s ease-out;
     overflow: hidden;
     cursor: pointer;
@@ -270,6 +291,7 @@ td {
 .read_more:focus {
     max-height: 2000px;
     width: 200px;
+    -webkit-transition: max-height 0.6s ease-in;
     transition: max-height 0.6s ease-in;
     outline: none;
     overflow: hidden;
@@ -278,9 +300,11 @@ td {
 #se_mer_knapp {
     text-decoration: none;
     color: #444;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
 #text_area {
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }

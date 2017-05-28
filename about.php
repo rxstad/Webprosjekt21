@@ -27,7 +27,7 @@ require("header_menu.php");
             
             </div>
             <div class="about_flex_item">
-                <img src="img/about_WL.jpg" width="100%">
+                <img src="img/about/about_WL.jpg" width="100%">
             </div>
         </div>
 
@@ -38,19 +38,19 @@ require("header_menu.php");
         <div class="team_flex">
 
             <div class="team_flex_item">
-                <img src="img/temp/profilepic.jpg" width="100%">
+                <img src="img/about/benjamin.jpg" width="100%">
                 <h2 class="name_up">Benjamin</h2>
             </div>
             <div class="team_flex_item">
-                <img src="img/temp/profilepic.jpg" width="100%">
+                <img src="img/about/glenn.jpg" width="100%">
                 <h2 class="name_up">Glenn</h2>
             </div>
             <div class="team_flex_item">
-                <img src="img/temp/profilepic.jpg" width="100%">
+                <img src="img/about/simen.jpg" width="100%">
                 <h2 class="name_up">Simen</h2>
             </div>
             <div class="team_flex_item">
-                <img src="img/temp/profilepic.jpg" width="100%">
+                <img src="img/about/tomas.jpg" width="100%">
                 <h2 class="name_up">Tomas</h2>
             </div>
         </div>
