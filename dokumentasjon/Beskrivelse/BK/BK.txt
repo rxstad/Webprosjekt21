@@ -1,6 +1,6 @@
 Hver dag besøker mer enn 11 millioner gjester BURGER KING® restauranter 
 rundt om i verden. De gjør dette fordi våre restauranter er kjent 
-for å levere kvalitetsrik, smakfull og rimelig mat. 
+for å levere kvalitetsrik, smakfull og rimelig mat. <br /><br />
 BURGER KING® ble grunnlagt i 1954, og er nå den nest største 
 hamburgerkjeden i verden. Det originale HOME OF THE WHOPPER®, vårt 
 engasjement i førsteklasses ingredienser, signaturoppskrifter og

@@ -51,9 +51,28 @@
     font-weight: 300;
     color: #444;
 }
+.top_info {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
 
-.side_social {
-    margin-top: 20px;
+.tlf {
+    margin-top: -30px;
+    margin-left: 35px;
+    margin-bottom: 0;
+}
+.tlf_img {
+    margin-left: -140px;
+}
+.social {
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+.social {
+    filter: grayscale(0);
 }
 
 /* =============== TILBAKEKNAPP =============== */
@@ -114,18 +133,16 @@
     margin-bottom: 20px;
     text-align: center;
 }
-.place_title a, a:visited, a:link {color: #000; text-decoration: none;
-}
+.place_title a, a:visited, a:link {color: #000; text-decoration: none;}
+
 /* =============== ÅPNINGSTIDER =============== */
 .time_open_close {
     padding: ;
-    width: 200px;
+    width: 300px;
     height: auto;
     background: #aec671;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding: 10px;
     position: relative;
 }
@@ -140,9 +157,87 @@
     text-align: center;
     font-size: 12pt;
 }
+.timetable {
+    width: 320px;
+}
+.timetable h3 {
+    font-size: 11pt;
+}
+.accordion {
+    margin: 0px;
+    background: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+}
+.accordion dt {
+    margin-bottom: 0;
+    position: relative;
+}
+.accordion dt h2 {
+    margin-left: 0px;
+    cursor: pointer;
+}
+.accordion dt, .accordion dd {
+    border: 0px solid black;
+    border-bottom: 0;
+}
+.accordion dt a, .accordion dd a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.accordion dd {
+    border-top: 0;
+    margin-left: 0;
+}
+.accordion dd:last-of-type {
+    position: relative;
+    top: -1px;
+}
+.accordion_arrow {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
+tr {
+    padding: 5px;
+}
+td {
+    border-collapse: collapse;
+    padding: 10px;
+    min-width: 170px;
+}
+
+/* =============== INFORMASJON =============== */
+#beskrivelse {
+    word-break: break-all;
+    padding-top: 10px;
+}
+.info_flex {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: auto;
+    align-content: stretch;
+}
+
+.info_flex_item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-self: flex-start;
+    height: auto;
+    width: 330px;
+    margin-top: 25px;
+}
 /* =============== BILDER =============== */
 .place_photos {
-    background: #ddd;
+    background: #f2f2f2;
     max-width: 800px;
     padding: 20px;
     margin-bottom: 20px;
@@ -156,7 +251,7 @@
     align-content: stretch;
 }
 .place_photos_size {
-    max-width: 300px;
+    width: 330px;
     flex-grow: 1;
     flex-shrink: 1;
     padding-left: 10px;
@@ -166,15 +261,18 @@
 
 .read_more {
     max-height: 100px;
+    width: 200px;
     transition: max-height 0.5s ease-out;
     overflow: hidden;
     cursor: pointer;
 }
 
 .read_more:focus {
-    max-height: 1000px;
+    max-height: 2000px;
+    width: 200px;
     transition: max-height 0.6s ease-in;
     outline: none;
+    overflow: hidden;
 }
 
 #se_mer_knapp {
@@ -185,11 +283,4 @@
 
 #text_area {
     transition: 0.5s ease;
-}
-
-#beskrivelse {
-    font-family: helvetica, sans-serif;;
-    font-size: 120%;
-    white-space: pre;
-
 }

@@ -33,13 +33,9 @@ require("header_menu.php");
 
             <div class="place_title">
                 <script>
-
-                    if (getUrl() !== "undefined") {
-                        document.write('<a href="' + getUrl() + '"><?= $object['navn']?></a>');
-                    }
-                    else {
+                    
                         document.write("<?= $object['navn']?>");
-                    }
+                    
                 </script>
 
 
@@ -50,7 +46,62 @@ require("header_menu.php");
                     getAdress();
                 </script>
             </div>
+            <div class="top_info">
+                    <img class="tlf_img" src="img/icons/Phone.png" width="30px"> <h3 class="tlf"><?= $object['tlf'] ?></h3>
+                    <br>
+                    <?php
+                    $faceb = '<a href="' . $object["facebook"] . '"> <img class="footer_social_img" src="img/icons/Facebook.png" width="35px"><a/>';
+                    $twitter = '<a href="' . $object["twitter"] . '"> <img class="footer_social_img" src="img/icons/Twitter.png" width="35px"><a/>';
+                    $googlepluss = '<a href="' . $object["googlepluss"] . '"> <img class="footer_social_img" src="img/icons/Google Plus.png" width="35px"><a/>';
 
+                    if ($object['facebook'] == !null) echo $faceb;
+                    if ($object['twitter'] == !null) echo $twitter;
+                    if ($object['googlepluss'] == !null) echo $googlepluss;
+                    ?> <script>
+
+                    if (getUrl() !== "undefined") {
+                        document.write('<a href="' + getUrl(name) + '"><img class="footer_social_img" src="img/icons/Domain.png" width="35px"></a>');
+                    }
+                    else {
+                        document.write("");
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div id="main">
+
+                <script>
+                    $(document).ready(function(){
+                    $('#beskrivelse').condense(
+                    {    
+                    moreSpeed: 'fast',
+                    lessSpeed: 'slow',
+                    moreText: 'les mer',
+                    lessText: 'se mindre'
+                    }
+                    );
+                    });
+                </script>
+
+                 <div class="info_flex">
+
+                     <div class="info_flex_item">
+                        
+                        <?php
+                        if (file_exists($object['beskrivelse'])) {
+                            $beskrivelse = htmlspecialchars($object['beskrivelse'], ENT_QUOTES, 'UTF-8');
+                            echo '<p id="beskrivelse">' . file_get_contents($beskrivelse) . '</p>';
+                        } else {
+                            echo '<p id="beskrivelse"> Ingen beskrivelse for denne siden.</p>';
+                        }
+                        ?>
+                        <!--           <? //= $object['beskrivelse'] ?> -->
+
+            
+                     </div>
+            <div class="info_flex_item">
+                
             <div class="time_open_close">
 
                 <h3></h3>
@@ -60,13 +111,13 @@ require("header_menu.php");
                         if (getIsOpen() == true) {
                             if (document.body) {
                                 $('.time_open_close').css('background', '#AEC671');
-                                $(".time_open_close h3").html('Åpent <br />'  + getOpeningTime());
+                                $(".time_open_close h3").html('Åpent nå');
                             }
                         }
                         else if (getIsOpen() == false) {
                             if (document.body) {
                                 $('.time_open_close').css('background', '#AD4949');
-                                $(".time_open_close h3").html('Stengt <br />'  + getOpeningTime());
+                                $(".time_open_close h3").html('Stengt');
                             }
                         } else {
                             if (document.body) {
@@ -76,52 +127,32 @@ require("header_menu.php");
                     })
                 </script>
             </div>
-            <img src="img/icons/Phone.png" width="20px"> <?= $object['tlf'] ?>
-            <hr>
+
+            <div class="timetable">
+
+                <dl class="accordion">
+
+                    <dt><a href=""><h3>Åpningstider</h3><img src="img/arrangement/arrow.png" class="accordion_arrow" width="15px"></a></dt>
+                        <dd>
+                        <table style="width:100%">
+                            <tr>
+                                <td> <script> /*henter åpningstider fra googles database*/
+                                     getOpeningtimes();
+                                     </script>
+                                </td>
+                            </table>
+
+                        </dd>
+                 </dl>
+
+             </div>
 
 
-            <hr>
-            <h4>Åpningstider</h4>
-            <script> /*henter åpningstider fra googles database*/
-                getOpeningtimes();
-            </script>
-            <hr>
-
-            <div class="side_social">
-                <center>
-                    <?php
-                    $faceb = '<a href="' . $object["facebook"] . '"> <img src="img/icons/Facebook.png" width="35px"><a/>';
-                    $twitter = '<a href="' . $object["twitter"] . '"> <img src="img/icons/Twitter.png" width="35px"><a/>';
-                    $googlepluss = '<a href="' . $object["googlepluss"] . '"> <img src="img/icons/Google Plus.png" width="35px"><a/>';
-
-                    if ($object['facebook'] == !null) echo $faceb;
-                    if ($object['twitter'] == !null) echo $twitter;
-                    if ($object['googlepluss'] == !null) echo $googlepluss;
-
-
-                    ?>
-                </center>
             </div>
         </div>
 
-        <div id="main">
+                
 
-            <div class="read_more" tabindex="0">
-
-                <?php
-
-                if (file_exists($object['beskrivelse'])) {
-                    $beskrivelse = htmlspecialchars($object['beskrivelse'], ENT_QUOTES, 'UTF-8');
-                    echo '<p id="beskrivelse">' . file_get_contents($beskrivelse) . '</p>';
-                } else {
-                    echo '<p id="beskrivelse"> Ingen beskrivelse for denne siden </p>';
-                }
-                ?>
-
-
-                <!--           <? //= $object['beskrivelse'] ?> -->
-
-            </div>
 
             <div class="place_photos">
                 <center><h2>
@@ -139,9 +170,9 @@ require("header_menu.php");
 
 
     <script type="text/javascript" src="mapAPI.js"></script>
-
+    <script src="js/accordion.js"></script>
 
     </body onload="initialize()">
-<?php
-require("footer.php");
-?>
+    <?php
+    require("footer.php");
+    ?>

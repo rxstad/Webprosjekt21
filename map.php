@@ -16,7 +16,7 @@ $lng = explode('lng: ', $coords)[1];
         var brenneriveien = {lat: 59.920112, lng: 10.752632};
         var vulkan = {lat: 59.923297, lng: 10.752349};
         var map = new google.maps.Map(document.getElementById('header'), {
-            zoom: 14,
+            zoom: 15,
             center: sted,
             mapTypeControl: false,
             streetViewControl: false,
