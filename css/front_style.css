@@ -321,31 +321,32 @@ input[type=submit] {
     margin-left: auto;
     margin-right: auto;
     text-align: right;
-    color: #fff;
+    color: #000;
 }
 
 .main_info_wrap h1 {
     font-size: 30pt;
     text-align: right;
+    margin-top: 50px;
 }
 
 .main_info_wrap a {
-    padding: 10px;
+    padding-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 10pt;
-    color: #fff;
+    color: #000;
     outline: 0;
     background: transparent;
     transition: 0.3s ease-in-out;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #222;
     text-decoration: none;
 }
 
 .main_info_wrap a:hover {
-    padding: 10px;
+    padding-bottom: 10px;
     background: transparent;
-    border-bottom: 2px solid #222;
-    color: #fff;
+    border-bottom: 2px solid #fff;
+    color: #000;
     outline: 0;
     cursor: pointer;
 }

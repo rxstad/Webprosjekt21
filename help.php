@@ -14,7 +14,7 @@ require("header_menu.php");
 	<h3>Frequently asked questions</h3></center>
 		<dl class="accordion">
 
-			<dt><a href=""><h2>Hvordan søker jeg?</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+			<dt><a href=""><h2>Hvordan søker jeg?</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 				<table style="width:100%">
 					<tr>
@@ -25,7 +25,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><h2>Hvor kan jeg legge inn min bedrift/arrangement?</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><h2>Hvor kan jeg legge inn min bedrift/arrangement?</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 				<table style="width:100%">
 					<tr>
@@ -37,7 +37,7 @@ require("header_menu.php");
 					</table>
 
 				</dd>
-				<dt><a href=""><h2>Hvordan registrerer jeg meg?</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><h2>Hvordan registrerer jeg meg?</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 				<table style="width:100%">
 					<tr>
@@ -47,7 +47,7 @@ require("header_menu.php");
 					</table>
 
 				</dd>
-				<dt><a href=""><h2>Har dere en applikasjon?</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><h2>Har dere en applikasjon?</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 				<table style="width:100%">
 					<tr>
@@ -58,7 +58,7 @@ require("header_menu.php");
 					</table>
 
 				</dd>
-				<dt><a href=""><h2>Kan jeg fjerne bedriften min fra Westerlife?</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><h2>Kan jeg fjerne bedriften min fra Westerlife?</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 				<table style="width:100%">
 					<tr>
@@ -68,7 +68,7 @@ require("header_menu.php");
 					</table>
 
 				</dd>
-				<dt><a href=""><h2>Personvern</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><h2>Personvern</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 				<table style="width:100%">
 					<tr>

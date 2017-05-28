@@ -17,7 +17,7 @@ require("header_menu.php");
 
 		<dl class="accordion">
 
-			<dt><a href=""><img src="img/arrangement/grafisk.jpg" class="accordion_img" width="80px"><h2>Utstilling Westerdals Grafisk design</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+			<dt><a href=""><img src="img/arrangement/grafisk.jpg" class="accordion_img" width="80px"><h2>Utstilling Westerdals Grafisk design</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 				<table style="width:100%">
 					<tr>
@@ -37,7 +37,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/skuespill.jpg" class="accordion_img" width="80px"><h2>Avgangsforestillinger Skuespill</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/skuespill.jpg" class="accordion_img" width="80px"><h2>Avgangsforestillinger Skuespill</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 					<table style="width:100%">
 						<tr>
@@ -58,7 +58,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/musikkfest.jpg" class="accordion_img" width="80px"><h2>Musikkfest Oslo 2017</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/musikkfest.jpg" class="accordion_img" width="80px"><h2>Musikkfest Oslo 2017</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 
 					<table style="width:100%">
@@ -71,7 +71,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/øl2.jpg" class="accordion_img" width="80px"><h2>Håndverksølfestivalen</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/øl2.jpg" class="accordion_img" width="80px"><h2>Håndverksølfestivalen</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 
 					<table style="width:100%">
@@ -84,7 +84,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/gin.jpg" class="accordion_img" width="80px"><h2>Oslo Ginfestival</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/gin.jpg" class="accordion_img" width="80px"><h2>Oslo Ginfestival</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 
 					<table style="width:100%">
@@ -97,7 +97,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/løp.jpg" class="accordion_img" width="80px"><h2>Sommernattsløpet</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/løp.jpg" class="accordion_img" width="80px"><h2>Sommernattsløpet</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 
 					<table style="width:100%">
@@ -110,7 +110,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/piknik.jpg" class="accordion_img" width="80px"><h2>Piknik i Parken</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/piknik.jpg" class="accordion_img" width="80px"><h2>Piknik i Parken</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 
 					<table style="width:100%">
@@ -123,7 +123,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/festival.jpg" class="accordion_img" width="80px"><h2>Høvdingsens Midtsommerfestival</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/festival.jpg" class="accordion_img" width="80px"><h2>Høvdingsens Midtsommerfestival</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 
 					<table style="width:100%">
@@ -136,7 +136,7 @@ require("header_menu.php");
 
 				</dd>
 
-				<dt><a href=""><img src="img/arrangement/pokemon.jpg" class="accordion_img" width="80px"><h2>Pokémonmesse</h2><img src="img/arrangement/arrow.png" class="accordion_arrow" width="25px"></a></dt>
+				<dt><a href=""><img src="img/arrangement/pokemon.jpg" class="accordion_img" width="80px"><h2>Pokémonmesse</h2><img src="img/icons/arrow.png" class="accordion_arrow" width="25px"></a></dt>
 				<dd>
 
 					<table style="width:100%">

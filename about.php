@@ -11,7 +11,7 @@ require("header_menu.php");
 
     </div>
 </div>
-<center><img class="header_img" src="img/desk_about.png" width="900px"></center>
+<center><img class="header_img" src="img/backgrounds/desk_about.png" width="900px"></center>
 
 <div id="wrapper">
     <div id="main">

@@ -132,7 +132,7 @@ require("header_menu.php");
 
                 <dl class="accordion">
 
-                    <dt><a href=""><h3>Åpningstider</h3><img src="img/arrangement/arrow.png" class="accordion_arrow" width="15px"></a></dt>
+                    <dt><a href=""><h3>Åpningstider</h3><img src="img/icons/arrow.png" class="accordion_arrow" width="15px"></a></dt>
                         <dd>
                         <table style="width:100%">
                             <tr>

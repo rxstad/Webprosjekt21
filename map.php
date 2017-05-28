@@ -172,7 +172,7 @@ $lng = explode('lng: ', $coords)[1];
         });
 
         var fjerdingenImg = {
-            url: 'img/westerdalslogo.png',
+            url: 'img/icons/westerdalslogo.png',
             scaledSize: new google.maps.Size(50, 50)
         };
 

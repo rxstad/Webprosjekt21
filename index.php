@@ -44,7 +44,7 @@ require("header_menu.php");
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="mat" name="search" hidden="true">
                     <button type="submit" name="submit" value="mat" class="hide_button">
-                        <img src="img/shops/mat1.jpg" class="imgitem_main" width="100%"></button>
+                        <img src="img/temp/mat1.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
                 <div class="imgdesc_main">Spise</div>
@@ -55,7 +55,7 @@ require("header_menu.php");
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="Museum" name="search" hidden="true">
                     <button type="submit" name="submit" value="Museum" class="hide_button">
-                        <img src="img/shops/opera.jpg" class="imgitem_main" width="100%"></button>
+                        <img src="img/temp/opera.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
 
@@ -65,7 +65,7 @@ require("header_menu.php");
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="uteliv" name="search" hidden="true">
                     <button type="submit" name="submit" value="uteliv" class="hide_button">
-                        <img src="img/shops/nightlife.jpg" class="imgitem_main" width="100%"></button>
+                        <img src="img/temp/nightlife.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
 
@@ -76,7 +76,7 @@ require("header_menu.php");
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="park" name="search" hidden="true">
                     <button type="submit" name="submit" value="park" class="hide_button">
-                        <img src="img/shops/park3.jpg" class="imgitem_main" width="100%"></button>
+                        <img src="img/temp/park3.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
                 <div class="imgdesc_main">Parker</div>
@@ -85,7 +85,7 @@ require("header_menu.php");
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="kaffe" name="search" hidden="true">
                     <button type="submit" name="submit" value="kaffe" class="hide_button">
-                        <img src="img/shops/coffeeshop2.jpg" class="imgitem_main" width="100%"></button>
+                        <img src="img/temp/coffeeshop2.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
                 <div class="imgdesc_main">Kaffe</div>
@@ -94,7 +94,7 @@ require("header_menu.php");
                 <form method="post" action="results.php?go" id="searchform">
                     <input type="text" value="butikk" name="search" hidden="true">
                     <button type="submit" name="submit" value="butikk" class="hide_button">
-                        <img src="img/shops/windowpants.jpg" class="imgitem_main" width="100%"></button>
+                        <img src="img/temp/windowpants.jpg" class="imgitem_main" width="100%"></button>
                 </form>
 
                 <div class="imgdesc_main">Shopping</div>
@@ -117,7 +117,7 @@ require("header_menu.php");
             </div>
 
             <div style="float:left; width: 40%">
-                <img src="img/westerlife_iphone.png" class="iphone" width="340px">
+                <img src="img/backgrounds/westerlife_iphone.png" class="iphone" width="340px">
             </div>
 
         </div>
